@@ -1,0 +1,34 @@
+/root/.cache/gltest-direct/extracted/v0.2.16/py-lib-genlayer-std/11rhn002yfajawsz7fai6mykznbxkxs6l91iskj5cm82c92qhy3v/genlayer/gl/annotations.py
+
+f, _get_schema.READONLY_ATTR, False)
+		return f
+
+
+class public:
+	@staticmethod
+	def view(f):
+		"""
+		Decorator that marks a contract method as a public view
+		"""
+		setattr(f, _get_schema.PUBLIC_ATTR, True)
+		setattr(f, _get_schema.READONLY_ATTR, True)
+		return f
+
+	write = _write()
+	"""
+	Decorator that marks a contract method as a public write. Has `.payable`
+
+	.. code:: python
+
+		@gl.public.write
+		def foo(self) -> None: ...
+
+		@gl.public.write.payable
+		def bar(self) -> None: ...
+
+		@gl.public.write.min_gas(leader=100, validator=20).payable
+		def bar(self) -> None: ...
+	"""
+
+
+del _write

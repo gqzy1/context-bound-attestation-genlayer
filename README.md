@@ -1,8 +1,9 @@
 # ContextPass: NonTransitiveContextAdmissionV1
 
-**Phase 1 deterministic core — NOT DEPLOYABLE.** The semantic consensus entry
-always raises `CONSENSUS_NOT_IMPLEMENTED`. No production admission can be
-approved or denied until the separately authorized Phase 2 implementation.
+**Phase 2 independent custom consensus — offline verified only.** The pinned
+SDK custom `run_nondet_unsafe` gate now runs complete independent Leader and
+Validator classification. No real model/network consensus, deployment or
+transaction has been executed; deployment remains unauthorized.
 
 A space owner chooses one trusted original issuer and an immutable entry
 requirement. An issuer creates a non-transferable root attestation for another
@@ -25,9 +26,10 @@ identities and does not make public room content confidential.
   revocation-aware `is_active_member` gate inside `post_room_note`.
 - UTF-8 limits, control-character rejection, bounded public pagination and a
   30-note cap per space.
-- D01–D24 Direct Mode acceptance tests; test doubles exist only in test files.
+- D01–D24 Direct Mode regression and N01–N10 offline custom-gate tests;
+  S01–S20 run with scripted agreement/disagreement, not actual model predictions.
 
-**Not implemented:** real Leader/Validator evaluation, frontend, deployment,
+**Not performed:** real network Leader/Validator evaluation, frontend, deployment,
 live transaction evidence, Portal submissions or Repository B.
 
 ## Local verification
@@ -43,13 +45,14 @@ python3.12 -m venv .venv
 .venv/bin/python -m pip install -r requirements.lock.txt
 .venv/bin/genvm-lint download --version v0.2.16
 .venv/bin/python scripts/prepare_direct_sdk.py
-.venv/bin/python -m pytest tests/direct -q
+.venv/bin/python -m pytest tests/direct tests/consensus -q
 .venv/bin/genvm-lint check contracts/context_bound_attestation.py --json
 PATH="$PWD/.venv/bin:$PATH" .venv/bin/genvm-lint typecheck contracts/context_bound_attestation.py --json
 ```
 
-The preparation script only copies the downloaded official SDK artifact into
-the Direct Mode cache after verifying its digest. It does not deploy, connect
+The preparation script copies the downloaded official SDK artifact into
+the Direct Mode cache after verifying its digest, then extracts the exact
+Phase 0 cloudpickle runner for callback serialization tests. It does not deploy, connect
 to a blockchain, invoke an LLM, or handle wallets. Tests block socket network
 connections and explicitly select SDK v0.2.16. The integration pytest plugin
 is disabled; only Direct Mode runs.
@@ -65,7 +68,7 @@ Do not substitute a different network to resolve local tooling issues.
 | `create_space(title, required_scope, trusted_issuer)` | Sender owns immutable room; returns space ID |
 | `issue_attestation(holder, label, source_scope)` | Sender is original issuer; no self-issuance; returns root ID |
 | `revoke_attestation(attestation_id)` | Issuer only; repeat rejects `ALREADY_REVOKED` |
-| `apply_and_join(space_id, root_attestation_id)` | All deterministic prechecks; Phase 1 stops at unimplemented consensus |
+| `apply_and_join(space_id, root_attestation_id)` | Deterministic prechecks; independent custom consensus; persist only after accepted return |
 | `post_room_note(space_id, text)` | Active membership checked inside contract immediately before append |
 
 Reads: `get_space`, `get_attestation`, `get_decision`, `is_active_member`,
@@ -76,15 +79,16 @@ reject. See [SPEC.md](SPEC.md) for exact read shapes and limits.
 ## Review material
 
 - [Frozen architecture](architecture-freeze-v1/02_ARCHITECTURE_FREEZE_V1.md)
-- [Canonical consensus specification — not executed in Phase 1](architecture-freeze-v1/03_CANONICAL_CONSENSUS_PROMPT.md)
+- [Canonical consensus specification](architecture-freeze-v1/03_CANONICAL_CONSENSUS_PROMPT.md)
 - [TESTING.md](TESTING.md): D01–D24 mapping, test isolation and type-check limitation
-- [CONSENSUS.md](CONSENSUS.md): fail-closed Phase 1 boundary
+- [CONSENSUS.md](CONSENSUS.md): independent classification and exact comparison
 - [PROJECT_CHECKPOINT.md](PROJECT_CHECKPOINT.md): actual status and recovery instructions
 - [PHASE_0_ENVIRONMENT_REPORT.md](PHASE_0_ENVIRONMENT_REPORT.md): original environment evidence
-- [PHASE_1_IMPLEMENTATION_REPORT.md](PHASE_1_IMPLEMENTATION_REPORT.md): actual execution results
+- [PHASE_1_IMPLEMENTATION_REPORT.md](PHASE_1_IMPLEMENTATION_REPORT.md): preserved Phase 1 results
+- [PHASE_2_IMPLEMENTATION_REPORT.md](PHASE_2_IMPLEMENTATION_REPORT.md): current results, limits and Draft PR
 
 Network reserved for later authorized stages: **Stable Studionet only**,
 chain ID **61999**, RPC `https://studio.genlayer.com/api`, explorer
 `https://explorer-studio.genlayer.com/`. No key/seed is needed for these tests.
-**Do not deploy this Phase 1 draft. Do not enter Phase 2 without user approval.**
+**Do not deploy this offline draft. STOP pending explicit Phase 3 approval.**
 

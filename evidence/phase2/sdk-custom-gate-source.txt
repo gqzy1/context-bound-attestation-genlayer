@@ -1,0 +1,47 @@
+def run_nondet_unsafe[T: calldata.Decoded](
+	leader_fn: typing.Callable[[], T], validator_fn: typing.Callable[[Result], bool], /
+) -> Lazy[T]:
+	"""
+	Executes a non-deterministic block with leader-validator consensus.
+
+	This is the most generic API for non-deterministic execution. The leader function
+	runs as is, validators one checks the result.
+
+	:param leader_fn: Function executed by the leader node (must be serializable)
+	:param validator_fn: Function that validates the leader's result and returns bool
+	:return: The result from the leader (iff validation passes, otherwise VM will be terminated)
+
+	.. warning::
+		This function does not use extra sandbox for catching validator errors.
+		Validator error will result in a ``Disagree`` error in executor (same as if
+		this function returned ``False``). Use :py:func:`run_nondet` instead if you
+		want to catch and inspect ``validator_fn`` errors, or use sandbox inside of it.
+
+	.. note::
+		All sub-vm returns go through :py:mod:`genlayer.py.calldata` encoding.
+
+	Example:
+		>>> def leader():
+		...   return os.urandom(1)[0] % 3
+		>>> def validator(result):
+		...   return unpack_result(result) == 1  # agree in 33% of cases
+		>>> value = gl.vm.run_nondet_unsafe(leader, validator)
+	"""
+	import cloudpickle
+
+	def validator_fn_mapped(stage_data):
+		leaders_result = _decode_sub_vm_result_retn(stage_data['leaders_result'])
+		return validator_fn(leaders_result)
+
+	ret = gl_call.gl_call_generic(
+		{
+			'RunNondet': {
+				'data_leader': cloudpickle.dumps(lambda _: leader_fn()),
+				'data_validator': cloudpickle.dumps(validator_fn_mapped),
+			}
+		},
+		_decode_sub_vm_result,
+	)
+
+	return ret
+

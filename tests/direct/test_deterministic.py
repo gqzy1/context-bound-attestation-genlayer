@@ -256,11 +256,15 @@ def test_D19_admission_is_not_new_root(contract, direct_vm, actors, setup_room, 
     assert contract.get_decision(sid, actors[1])["status"] == "NO_DECISION"
 
 
-def test_D20_unpatched_boundary_and_no_frontend_result(contract, direct_vm, actors, setup_room, storage_image):
+def test_D20_unaccepted_consensus_and_no_frontend_result(contract, direct_vm, actors, setup_room, storage_image, monkeypatch):
+    from genlayer import gl
+    def unresolved(*args):
+        raise gl.vm.UserError("UNACCEPTED_TEST_CONSENSUS")
+    monkeypatch.setattr(gl.vm, "run_nondet_unsafe", unresolved)
     sid, rid = setup_room
     direct_vm.sender = actors[1]
     before = storage_image()
-    reject("CONSENSUS_NOT_IMPLEMENTED", contract.apply_and_join, sid, rid)
+    reject("UNACCEPTED_TEST_CONSENSUS", contract.apply_and_join, sid, rid)
     with pytest.raises(TypeError):
         contract.apply_and_join(sid, rid, decision="ELIGIBLE")
     assert storage_image() == before
@@ -399,11 +403,12 @@ def test_active_view_rechecks_every_binding(contract, direct_vm, actors, setup_r
     assert not contract.is_active_member(sid, actors[1])
 
 
-def test_production_has_no_ai_or_test_flag(contract):
+def test_production_custom_gate_has_no_test_flag(contract):
     tree = ast.parse(SOURCE.read_text())
     cls = next(node for node in tree.body if isinstance(node, ast.ClassDef) and node.name == "NonTransitiveContextAdmissionV1")
     method = next(node for node in cls.body if isinstance(node, ast.FunctionDef) and node.name == "_semantic_decision")
-    assert len(method.body) == 2 and isinstance(method.body[-1], ast.Raise)
+    calls = [node for node in ast.walk(method) if isinstance(node, ast.Call)]
+    assert sum(isinstance(node.func, ast.Attribute) and node.func.attr == "run_nondet_unsafe" for node in calls) == 1
     assert inspect.signature(contract.apply_and_join).parameters.keys() == {"space_id", "root_attestation_id"}
-    assert "exec_prompt" not in SOURCE.read_text()
-    assert "run_nondet_unsafe(" not in SOURCE.read_text()
+    assert "exec_prompt" in SOURCE.read_text()
+    assert "CONSENSUS_NOT_IMPLEMENTED" not in SOURCE.read_text()

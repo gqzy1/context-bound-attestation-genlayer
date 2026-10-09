@@ -1,4 +1,4 @@
-"""Offline Phase 1 fixtures. No integration/network fixtures are used."""
+"""Offline Phase 1/2 fixtures. No integration/network fixtures are used."""
 import socket
 from pathlib import Path
 
@@ -8,7 +8,7 @@ import pytest
 @pytest.fixture(autouse=True)
 def forbid_network(monkeypatch):
     def blocked(*args, **kwargs):
-        raise AssertionError("Phase 1 tests must not connect to any network")
+        raise AssertionError("Offline tests must not connect to any network")
     monkeypatch.setattr(socket.socket, "connect", blocked)
     monkeypatch.setattr(socket.socket, "connect_ex", blocked)
     monkeypatch.setattr(socket, "create_connection", blocked)
@@ -41,7 +41,7 @@ def setup_room(contract, direct_vm, actors):
 
 @pytest.fixture
 def boundary(contract, monkeypatch):
-    """TEST ONLY: replace the private unimplemented boundary, never public API.
+    """TEST ONLY: isolate deterministic core from consensus, never public API.
 
     The production source contains no mock switch or admin grant method.
     This exercises prechecks and deterministic post-consensus persistence,

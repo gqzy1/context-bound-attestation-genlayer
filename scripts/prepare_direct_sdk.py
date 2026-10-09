@@ -19,4 +19,10 @@ if actual != DIGEST:
 target = Path.home() / ".cache/gltest-direct" / name
 target.parent.mkdir(parents=True, exist_ok=True)
 shutil.copyfile(source, target)
+from gltest.direct.sdk_loader import extract_runner
+cloudpickle_dir = extract_runner(
+    target, "py-lib-cloudpickle",
+    "1dlk6mnfabi0z7r39635amyfzw8xb6rm8bv4pmgv6ji1bfx9hghd", VERSION,
+)
+print("Pinned cloudpickle runner extracted for callback serialization:", cloudpickle_dir)
 print("Pinned Direct Mode SDK cache prepared; SHA256 verified")

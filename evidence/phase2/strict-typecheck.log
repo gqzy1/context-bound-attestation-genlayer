@@ -1,0 +1,122 @@
+{
+  "ok": false,
+  "diagnostics": [
+    {
+      "file": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"run_nondet_unsafe\" is partially unknown\n\u00a0\u00a0Type of \"run_nondet_unsafe\" is \"LazyApi[T@run_nondet_unsafe, (leader_fn: () -> T@run_nondet_unsafe, validator_fn: (Return[Unknown] | VMError | UserError) -> bool, /)]\"",
+      "range": {
+        "start": {
+          "line": 222,
+          "character": 19
+        },
+        "end": {
+          "line": 222,
+          "character": 42
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 306,
+          "character": 5
+        },
+        "end": {
+          "line": 306,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 317,
+          "character": 5
+        },
+        "end": {
+          "line": 317,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 328,
+          "character": 5
+        },
+        "end": {
+          "line": 328,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 341,
+          "character": 5
+        },
+        "end": {
+          "line": 341,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 360,
+          "character": 5
+        },
+        "end": {
+          "line": 360,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 380,
+          "character": 5
+        },
+        "end": {
+          "line": 380,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  }
+}

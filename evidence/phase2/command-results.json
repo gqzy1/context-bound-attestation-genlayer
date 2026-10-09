@@ -1,0 +1,110 @@
+{
+  "timestamp_utc": "2026-10-09T20:05:22.373584+00:00",
+  "cwd": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2",
+  "PATH_bin": "/workspace/scratch/114f91cc6678/phase0-env/bin",
+  "trace_env_for_all_tests": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer-phase2/evidence/phase2/consensus-traces.json",
+  "results": [
+    {
+      "name": "prepare-sdk",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/python",
+        "scripts/prepare_direct_sdk.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "prepare-sdk.log"
+    },
+    {
+      "name": "D-regression",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/python",
+        "-m",
+        "pytest",
+        "tests/direct",
+        "-q",
+        "--junitxml=evidence/phase2/d-results.xml"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "D-regression.log"
+    },
+    {
+      "name": "N-S-offline",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/python",
+        "-m",
+        "pytest",
+        "tests/consensus",
+        "-q",
+        "--junitxml=evidence/phase2/consensus-results.xml"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "N-S-offline.log"
+    },
+    {
+      "name": "all-tests",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/python",
+        "-m",
+        "pytest",
+        "tests/direct",
+        "tests/consensus",
+        "-q",
+        "--junitxml=evidence/phase2/all-results.xml"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "all-tests.log"
+    },
+    {
+      "name": "static-check",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/genvm-lint",
+        "check",
+        "contracts/context_bound_attestation.py",
+        "--json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "static-check.log"
+    },
+    {
+      "name": "default-typecheck",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/genvm-lint",
+        "typecheck",
+        "contracts/context_bound_attestation.py",
+        "--json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "default-typecheck.log"
+    },
+    {
+      "name": "strict-typecheck",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/genvm-lint",
+        "typecheck",
+        "contracts/context_bound_attestation.py",
+        "--strict",
+        "--json"
+      ],
+      "exit_code": 1,
+      "status": "FAIL",
+      "log": "strict-typecheck.log"
+    },
+    {
+      "name": "pip-check",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "pip-check.log"
+    }
+  ]
+}

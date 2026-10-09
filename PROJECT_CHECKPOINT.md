@@ -5,7 +5,9 @@
 **Authenticated GitHub account:** gqzy1, verified ID 155161534.
 **Repository:** gqzy1/context-bound-attestation-genlayer.
 **Branch:** phase1-deterministic-core. **Base:** main.
-**HEAD / Draft PR:** actual publication evidence will be appended after creation.
+**Verified implementation HEAD:** `3ec5200baabadd7547fecae8ce0703c67d844d83` (code/tests snapshot; documentation-only publication commit follows).
+**Draft PR:** [https://github.com/gqzy1/context-bound-attestation-genlayer/pull/1](https://github.com/gqzy1/context-bound-attestation-genlayer/pull/1), open / draft / unmerged.
+**Main remains:** `770aa5d4cf6d4ef2b6ef28fb8c81c78230a6fa0b`. Resolve the final documentation HEAD from the live PR; never assume this code snapshot is the current branch HEAD.
 
 ## 1. Overall mission
 

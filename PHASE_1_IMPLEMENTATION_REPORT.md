@@ -91,10 +91,13 @@ D11–D14/D18/D22 的共识后分支使用**仅测试内的私有边界 test dou
 
 连接登录与创建前浏览器 Owner 均再次核验为 **gqzy1 / account ID 155161534**；仓库 Owner `gqzy1`，repository ID `1412366933`。未用 `halihalibt` 执行仓库写入。
 
-- Repository：`gqzy1/context-bound-attestation-genlayer`（Public）。
+- Repository：[gqzy1/context-bound-attestation-genlayer](https://github.com/gqzy1/context-bound-attestation-genlayer)（Public）。
 - 独立开发分支：`phase1-deterministic-core`；base：`main`。
 - 初始 main SHA：`770aa5d4cf6d4ef2b6ef28fb8c81c78230a6fa0b`，仅 GitHub 创建时生成的 README bootstrap。
-- 实现和证据仅提交开发分支；Draft PR 的实际链接将在创建成功后追加。
+- 实现与测试证据 commit：`3ec5200baabadd7547fecae8ce0703c67d844d83`。
+- Draft PR：[https://github.com/gqzy1/context-bound-attestation-genlayer/pull/1](https://github.com/gqzy1/context-bound-attestation-genlayer/pull/1)；创建结果已核验 `draft=true`、`state=open`、`merged=false`、base=`main`、head=`phase1-deterministic-core`、作者=`gqzy1`。
+- 随后的文档证据提交只补充实际发布链接；最终分支 HEAD 由 PR 实时记录和外部交付报告记录。
+- 实现和证据仅提交开发分支；没有将实现写入 main。
 - 无 merge、无 auto-merge、无部署。
 
 ## 6. 风险、阻断及下一阶段建议

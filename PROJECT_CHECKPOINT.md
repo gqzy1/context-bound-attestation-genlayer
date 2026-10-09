@@ -5,7 +5,9 @@
 **Repository：** gqzy1/context-bound-attestation-genlayer。
 **新分支：** phase2-independent-consensus。
 **Base：** phase1-deterministic-core，精确基线 6f498abbf1525f304174ed2018509a4445d441c8。
-**本阶段 commit / Draft PR：** 创建后补充；目标为 Phase 1 分支，不是 main。
+**实现/测试 commit：** a1ec692946c787d3abbd329397638dc51365ed45，后续文档补充 commit 不改变合约/测试。
+**Draft PR：** [https://github.com/gqzy1/context-bound-attestation-genlayer/pull/2](https://github.com/gqzy1/context-bound-attestation-genlayer/pull/2)，Draft/open/unmerged；目标 phase1-deterministic-core。
+**最终 HEAD：** 查询 PR 当前分支；外部交付报告补充最终提交，避免文件自引用。
 **Phase 1 PR #1：** Draft/open/unmerged；保持原状。
 
 ## 1. 总目标

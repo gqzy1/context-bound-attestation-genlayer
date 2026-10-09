@@ -135,7 +135,9 @@ genlayer-test 0.29.2 mock 即使 text 模式也自动 JSON 解码；测试 mock 
 - Repository：[gqzy1/context-bound-attestation-genlayer](https://github.com/gqzy1/context-bound-attestation-genlayer)。
 - 新开发分支：phase2-independent-consensus。
 - 精确基线：6f498abbf1525f304174ed2018509a4445d441c8。
-- Draft PR 目标：phase1-deterministic-core；实际链接将在创建后记录。
+- 实现及完整离线证据 commit：a1ec692946c787d3abbd329397638dc51365ed45。
+- Draft PR：[https://github.com/gqzy1/context-bound-attestation-genlayer/pull/2](https://github.com/gqzy1/context-bound-attestation-genlayer/pull/2)；目标 phase1-deterministic-core，创建已确认 draft=true / open / merged=false，作者 gqzy1。
+- 后续只有报告/checkpoint 的链接补充提交；最终 HEAD 在外部交付报告及 PR 中记录。
 - Phase 1 PR #1、Phase 1 分支、main 保持原状；不合并任何 PR。
 
 ## 8. 成本、范围与停止

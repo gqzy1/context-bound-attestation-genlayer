@@ -1,3 +1,7 @@
+# Phase 4B verification
+
+Address suite: 77/77 PASS. A total: 240/240 PASS (163 existing + 77 new). B frontend: 124/124 PASS (116 existing + 8 new). All offline; scripted semantic outcomes are not real model/validator results. See Phase 4B report and evidence/phase4b for actual commands and the intentional pre-fix INVALID_ADDRESS failure. Python Strict retains upstream diagnostics; final status is recorded in the report. No suppression or SDK patch.
+
 # Phase 2 offline verification
 
 Results: **163/163 PASS**, 0 failures/errors/skips. Separate runs: D regression

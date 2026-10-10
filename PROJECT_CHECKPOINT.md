@@ -1,3 +1,13 @@
+# Phase 4B address compatibility checkpoint
+
+Account: gqzy1, ID 155161534 verified. New branch: phase4b-address-compatibility. A base: daf0bf9a70357fb626b0a8e732826c8db6e0c1fc; B base: 3c9760cf6e1eb444123b9a85296a174fd98b4123. Original branches/PRs/main are unchanged. A/B source SHA256: `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`, byte-identical. Only `_address` changes in production contract; original method ABI, permissions, state machine, frozen prompt and custom consensus remain unchanged.
+
+A 240/240 and B 124/124 offline PASS. No real deployment or transaction in this fix phase. Existing user-reported old deployment is separate from this undeployed patch candidate. Source commit and Draft PR links are in PHASE_4B_ADDRESS_COMPATIBILITY_REPORT.md. Python Strict issues and live raw-calldata uncertainty remain.
+
+Next authorized action: review patch and collect failure transaction calldata/decimal value; consider a separately authorized manual Stable Studionet redeployment with exact candidate source. Do not resume T02–T10 on an assumed patched address. Do not unlock frontend. STOP.
+
+## Historical checkpoint
+
 # PROJECT_CHECKPOINT — ContextPass A
 
 **阶段：** PHASE 2 — Independent Leader / Validator Consensus，离线完成。

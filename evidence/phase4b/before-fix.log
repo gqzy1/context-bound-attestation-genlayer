@@ -1,0 +1,39 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_________________________ test_integer_issue_calldata __________________________
+
+contract = <CalldataProxy for <_contract_context_bound_attestation.NonTransitiveContextAdmissionV1 object at 0x7f62c6ebf080>>
+direct_vm = VMContext(_sender=Address("0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc"), _origin=None, _contract_address=b'xJ\xdd\xec\...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+
+    def test_integer_issue_calldata(contract, direct_vm):
+        from genlayer import Address, gl
+        from genlayer.py import calldata
+        direct_vm.sender = Address(A)
+        envelope = calldata.decode(calldata.encode({"method": "issue_attestation", "args": [int(B, 16), "React", "Can build React components."]}))
+        assert type(envelope["args"][0]) is int
+        assert gl.message.sender_address == Address(A)
+        assert isinstance(gl.message.sender_address, Address)
+>       rid = contract.issue_attestation(*envelope["args"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/direct/test_address_compatibility.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../phase4a-env/lib/python3.12/site-packages/gltest/direct/loader.py:432: in _wrapped
+    return attr(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+contracts/context_bound_attestation.py:241: in issue_attestation
+    holder = _address(holder)
+             ^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+value = 541538612603074768...5399617015271840388
+
+    def _address(value: object) -> Address:
+        if not isinstance(value, Address) or value.as_bytes == bytes(20):
+>           raise gl.vm.UserError("INVALID_ADDRESS")
+E           genlayer.gl.vm.UserError: UserError(message='INVALID_ADDRESS')
+
+contracts/context_bound_attestation.py:148: UserError
+=========================== short test summary info ============================
+FAILED tests/direct/test_address_compatibility.py::test_integer_issue_calldata
+1 failed in 74.01s (0:01:14)

@@ -1,0 +1,138 @@
+{
+  "ok": false,
+  "diagnostics": [
+    {
+      "file": "/workspace/scratch/114f91cc6678/repository-a/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Argument type is partially unknown\n\u00a0\u00a0Argument corresponds to parameter \"o\" in function \"__new__\"\n\u00a0\u00a0Argument type is \"bytes | bytearray | memoryview[Unknown]\"",
+      "range": {
+        "start": {
+          "line": 158,
+          "character": 20
+        },
+        "end": {
+          "line": 158,
+          "character": 25
+        }
+      },
+      "rule": "reportUnknownArgumentType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/repository-a/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"run_nondet_unsafe\" is partially unknown\n\u00a0\u00a0Type of \"run_nondet_unsafe\" is \"LazyApi[T@run_nondet_unsafe, (leader_fn: () -> T@run_nondet_unsafe, validator_fn: (Return[Unknown] | VMError | UserError) -> bool, /)]\"",
+      "range": {
+        "start": {
+          "line": 253,
+          "character": 19
+        },
+        "end": {
+          "line": 253,
+          "character": 42
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/repository-a/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 337,
+          "character": 5
+        },
+        "end": {
+          "line": 337,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/repository-a/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 348,
+          "character": 5
+        },
+        "end": {
+          "line": 348,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/repository-a/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 359,
+          "character": 5
+        },
+        "end": {
+          "line": 359,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/repository-a/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 372,
+          "character": 5
+        },
+        "end": {
+          "line": 372,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/repository-a/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 391,
+          "character": 5
+        },
+        "end": {
+          "line": 391,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/114f91cc6678/repository-a/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 411,
+          "character": 5
+        },
+        "end": {
+          "line": 411,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  }
+}

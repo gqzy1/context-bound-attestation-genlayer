@@ -104,7 +104,13 @@ npm run verify:source
 A：gqzy1/context-bound-attestation-genlayer；head phase4b-address-compatibility → base phase2-independent-consensus。
 B：gqzy1/contextpass-genlayer；head phase4b-address-compatibility → base phase3-frontend-integration。
 
-实际 source commit、Draft PR 链接及最终只读状态将在创建后补充。原 A PR1/2、B PR1 保持 Draft/open/unmerged，不改 main，不自动合并。
+A 实现/source commit：`7a7078cfb07c1d65faf5db432049a5287ce4f5a6`；[Draft PR #3](https://github.com/gqzy1/context-bound-attestation-genlayer/pull/3)。
+
+B 实现/打包 commit：`61aac58e0b465a71a0fe3cf4162b1b10f43d1128`；[Draft PR #2](https://github.com/gqzy1/contextpass-genlayer/pull/2)。
+
+两者创建与只读复查均确认 Draft/open/merged=false，作者 gqzy1。后续仅报告/证据/checkpoint 的文档提交不改变源码；最终 HEAD 以 PR head 为准，避免文件自引用。通过公开 git fetch 取回两个精确提交，远端 A/B 合约与本地字节及新 SHA 完全一致。github-verification.json 记录初始补丁提交后的只读快照。
+
+原 A PR1：head 6f498abbf1525f304174ed2018509a4445d441c8；PR2：head daf0bf9a70357fb626b0a8e732826c8db6e0c1fc；B PR1：head 3c9760cf6e1eb444123b9a85296a174fd98b4123；均仍 Draft/open/unmerged。main 仍 A770aa5d4cf6d4ef2b6ef28fb8c81c78230a6fa0b、B5095cdc5503dda4642c917cfa4576d1286c36319。未使用 halihalibt 连接或修改其任何仓库。
 
 ## 7. 尚未解决的风险与下一步建议（本轮不执行）
 

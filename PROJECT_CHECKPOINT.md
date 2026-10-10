@@ -2,7 +2,7 @@
 
 Account: gqzy1, ID 155161534 verified. New branch: phase4b-address-compatibility. A base: daf0bf9a70357fb626b0a8e732826c8db6e0c1fc; B base: 3c9760cf6e1eb444123b9a85296a174fd98b4123. Original branches/PRs/main are unchanged. A/B source SHA256: `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`, byte-identical. Only `_address` changes in production contract; original method ABI, permissions, state machine, frozen prompt and custom consensus remain unchanged.
 
-A 240/240 and B 124/124 offline PASS. No real deployment or transaction in this fix phase. Existing user-reported old deployment is separate from this undeployed patch candidate. Source commit and Draft PR links are in PHASE_4B_ADDRESS_COMPATIBILITY_REPORT.md. Python Strict issues and live raw-calldata uncertainty remain.
+A 240/240 and B 124/124 offline PASS. No real deployment or transaction in this fix phase. Existing user-reported old deployment is separate from this undeployed patch candidate. A source commit: 7a7078cfb07c1d65faf5db432049a5287ce4f5a6; B packaging commit: 61aac58e0b465a71a0fe3cf4162b1b10f43d1128. Draft PRs: https://github.com/gqzy1/context-bound-attestation-genlayer/pull/3 and https://github.com/gqzy1/contextpass-genlayer/pull/2. Both Draft/open/unmerged, stacked on their original implementation branches. Exact final HEAD is the current PR head; docs-only follow-ups do not change source. Python Strict issues and live raw-calldata uncertainty remain.
 
 Next authorized action: review patch and collect failure transaction calldata/decimal value; consider a separately authorized manual Stable Studionet redeployment with exact candidate source. Do not resume T02–T10 on an assumed patched address. Do not unlock frontend. STOP.
 

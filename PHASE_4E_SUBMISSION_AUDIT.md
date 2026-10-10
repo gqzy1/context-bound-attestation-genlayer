@@ -117,7 +117,9 @@ PASS 为当前证据满足所列项，不等于所有浏览器场景或实时 Po
 | B | npm run typecheck | 0 | TypeScript strict PASS |
 | B | npm run verify:source | 0 | canonical SHA256 PASS |
 | B | npm run build | 0 | 472 modules；dist 生成；781.88 kB bundle 警告保留 |
-| A/B | git diff --check；SHA256、git hash-object、A/B/deployed bytes 比较 | 0 | 无 whitespace 错误；完整一致 |
+| A/B | git diff --cached --check -- *.md public/deployment-manifest.json | 0 | 文档与元数据无 whitespace 错误 |
+| A/B | SHA256、git hash-object、A/B/deployed bytes 比较 | 0 | 源码完整一致 |
+| B | git diff --cached --check（包括新增 raw logs） | 2 | 原始 build.log 保留工具输出尾空格；tests.log 保留末尾空行。不清洗原日志。A 同检查 exit 0 |
 
 Python 类型工具使用 PATH 中的 `.venv/bin`。离线测试没有真实 LLM 预测、交易或链上 writes。历史 240/145 PASS 不冒充本轮结果。本轮 B 失败明确保留，未升级依赖、改业务或改测试来获得 PASS。
 

@@ -1,3 +1,21 @@
+# CURRENT PORTAL SUBMISSION HANDOFF — 2026-10-11
+
+- Post-merge review facts: Repository A PR #6 merged as `59974f62f2ff7b732d034615231d375dbc556637`; Repository B PR #5 merged as `287c2e132cd04e53a4a5b1a8469ca2bb4a13736c`. The B1 test fix is `fbfb786446dbd728d09b122d8759ffaceec598af`.
+
+- Tests: A **240/240 PASS** (latest recorded full offline suite). B **145/145 PASS**, 7/7 files; B TypeScript, source SHA256 verification, build and GitHub Pages deployment all PASS on [ContextPass Pages #3](https://github.com/gqzy1/contextpass-genlayer/actions/runs/38075896135), commit `822645e7c91a8dc4e99eb93daa7f1e83fe9fb22e`.
+
+- Canonical Stable Studionet / Chain ID 61999 contract `0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8`; source SHA256 `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`. A / B complete contract copies and deployed source were independently verified byte-identical in Phase 4E.
+
+- Verified live product: https://gqzy1.github.io/contextpass-genlayer/ . One desktop-wallet `create_space` returned Space #3 and was independently rechecked via FINALIZED receipt and readback (tx `0x85c5037d3ac249faca70336a6760d4538dc26407181bf71d79da091e6457d02d`). The other four live frontend writes and certain wallet edge cases are NOT RUN LIVE.
+
+- Limitations retained: seven upstream Python Strict SDK diagnostics; missing archived original PNG/raw bundles; no explicit LICENSE yet; limited mobile signing/rejection/recovery QA; Overview nested Map raw-JSON display issue; bundle-size warning. T07 had one Leader rotation; T08/T10 are accepted **business Rollbacks**, not successful posts.
+
+- **The older 144/145 failure and prior READY FOR REVIEW/Draft/unmerged statements below are historical and superseded after the B1 fix and the approved PR merges.** They remain for audit traceability. No Portal submission is claimed by this header.
+
+---
+
+## Historical review snapshots below (preserved for provenance)
+
 # Phase 4E current review status — 2026-10-10
 
 Canonical source and deployment are on **main**. A audited HEAD `c690a2200569977e99e4cde9bfd52bd86aa4a89e`; B audited HEAD `6a6e8d13c6d73e40c6d185b0918a3e11e786cedc`. Phase 4D merge PRs A #5 / B #4 are already merged. Public hosted demo loaded in Phase 4E and contains the Phase 4D create_space statement.

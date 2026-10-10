@@ -1,0 +1,47 @@
+[
+  {
+    "file": "00_READ_FIRST.md",
+    "sha256": "901f0a05447d705416c8e711a22ac39bda8e314cae055de194e636fceaccd155",
+    "unchanged": true
+  },
+  {
+    "file": "01_DUPLICATION_AND_GATE.md",
+    "sha256": "10f57597554f765ebcb75d94ea96fba7c81fe5dee11166fef07affc7527bdb70",
+    "unchanged": true
+  },
+  {
+    "file": "02_ARCHITECTURE_FREEZE_V1.md",
+    "sha256": "b0f07afc5e0a2f8ca95aa7cfd9d4d67ce6483e9eb6c964a5699809560c929e53",
+    "unchanged": true
+  },
+  {
+    "file": "03_CANONICAL_CONSENSUS_PROMPT.md",
+    "sha256": "556b31809ee58e4f3e549e1c276d9770971c1521b1fba9d0c9189d85b4a8c401",
+    "unchanged": true
+  },
+  {
+    "file": "04_TEST_ACCEPTANCE_PLAN.md",
+    "sha256": "80cb6943b55fcf2205e7b98a5a4667f95bca9d60278ca773c900d833ae2db8da",
+    "unchanged": true
+  },
+  {
+    "file": "05_WORK_MASTER_AND_PHASE_COMMANDS.md",
+    "sha256": "594a7016c2a4f567c8722b6c55bc30e33358becd00b96edb3cb41ce1dcb7bf4b",
+    "unchanged": true
+  },
+  {
+    "file": "06_DEPLOYMENT_EVIDENCE_SUBMISSION.md",
+    "sha256": "67a62a75a794f4a5ff47fa96b8b9de642da37e102ee933221e043d69b6314883",
+    "unchanged": true
+  },
+  {
+    "file": "07_PROJECT_CHECKPOINT_TEMPLATE.md",
+    "sha256": "db512c94253efb22a196287e876fbae2941e5eb32855611bd3c050f76455f040",
+    "unchanged": true
+  },
+  {
+    "file": "08_FILE_MANIFEST.md",
+    "sha256": "47c36789cc12967fc892dd827bb7a7d4d630e0f8feef2e70f36008d179037e08",
+    "unchanged": true
+  }
+]

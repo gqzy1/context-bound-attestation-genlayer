@@ -1,3 +1,7 @@
+# Phase 4B address compatibility candidate
+
+This branch contains the minimum `_address` normalization fix. Patched SHA256: `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`. Review `PHASE_4B_ADDRESS_COMPATIBILITY_REPORT.md`. The previously reported deployment at `0x97B9003a17A8EDBD1b5E3379AA659753791497d9` uses the old source and is not patched by this PR. T02–T10 remain paused. No deployment, transaction, merge or frontend unlock was performed. Earlier phase reports below remain historical.
+
 # ContextPass: NonTransitiveContextAdmissionV1
 
 **Phase 2 independent custom consensus — offline verified only.** The pinned

@@ -144,9 +144,42 @@ def _text(value: object, max_bytes: int) -> str:
 
 
 def _address(value: object) -> Address:
-    if not isinstance(value, Address) or value.as_bytes == bytes(20):
+    # Calldata preserves wire types; Address annotations do not coerce args.
+    # Integers are the numeric value of the conventional 0x address (big-endian),
+    # NOT SDK Address.as_int, whose documented byte order is little-endian.
+    if isinstance(value, bool):
         raise gl.vm.UserError("INVALID_ADDRESS")
-    return value
+    if isinstance(value, Address):
+        raw = value.as_bytes
+    elif isinstance(value, int):
+        if not 0 < value < (1 << 160):
+            raise gl.vm.UserError("INVALID_ADDRESS")
+        raw = value.to_bytes(20, "big")
+    elif isinstance(value, (bytes, bytearray)):
+        raw = bytes(value)
+    elif isinstance(value, memoryview):
+        raw = value.tobytes()
+    elif isinstance(value, str):
+        if len(value) == 42 and value.startswith("0x") and all(
+            char in "0123456789abcdefABCDEF" for char in value[2:]
+        ):
+            raw = bytes.fromhex(value[2:])
+        else:
+            # The pinned Address constructor also supports base64. Validate
+            # strictly instead of its permissive decoder ignoring junk bytes.
+            import base64
+            import binascii
+            try:
+                raw = base64.b64decode(value, validate=True)
+            except (ValueError, binascii.Error):
+                raise gl.vm.UserError("INVALID_ADDRESS") from None
+            if base64.b64encode(raw).decode("ascii") != value:
+                raise gl.vm.UserError("INVALID_ADDRESS")
+    else:
+        raise gl.vm.UserError("INVALID_ADDRESS")
+    if len(raw) != 20 or raw == bytes(20):
+        raise gl.vm.UserError("INVALID_ADDRESS")
+    return Address(raw)
 
 
 def _id(value: object) -> u256:

@@ -1,0 +1,79 @@
+{
+  "timestamp_utc": "2026-10-09T19:37:00.908575+00:00",
+  "cwd": "/workspace/scratch/114f91cc6678/context-bound-attestation-genlayer",
+  "results": [
+    {
+      "name": "prepare-sdk",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/python",
+        "scripts/prepare_direct_sdk.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "prepare-sdk.log"
+    },
+    {
+      "name": "direct-tests",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/python",
+        "-m",
+        "pytest",
+        "tests/direct",
+        "-q",
+        "--junitxml=evidence/phase1/direct-results.xml"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "direct-tests.log"
+    },
+    {
+      "name": "static-check",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/genvm-lint",
+        "check",
+        "contracts/context_bound_attestation.py",
+        "--json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "static-check.log"
+    },
+    {
+      "name": "typecheck",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/genvm-lint",
+        "typecheck",
+        "contracts/context_bound_attestation.py",
+        "--json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "typecheck.log"
+    },
+    {
+      "name": "strict-typecheck",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/genvm-lint",
+        "typecheck",
+        "contracts/context_bound_attestation.py",
+        "--strict",
+        "--json"
+      ],
+      "exit_code": 1,
+      "status": "FAIL",
+      "log": "strict-typecheck.log"
+    },
+    {
+      "name": "pip-check",
+      "argv": [
+        "/workspace/scratch/114f91cc6678/phase0-env/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "pip-check.log"
+    }
+  ]
+}

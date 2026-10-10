@@ -1,0 +1,10 @@
+{
+  "authenticated_login": "gqzy1",
+  "account_id": 155161534,
+  "repository": "gqzy1/context-bound-attestation-genlayer",
+  "repository_id": 1412366933,
+  "owner_confirmed_before_creation": true,
+  "initial_main_sha": "770aa5d4cf6d4ef2b6ef28fb8c81c78230a6fa0b",
+  "branch": "phase1-deterministic-core",
+  "wrong_account_used_for_repository_writes": false
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "prepare-sdk",
+    "command": [
+      ".venv/bin/python",
+      "scripts/prepare_direct_sdk.py"
+    ],
+    "cwd": "/workspace/scratch/92144da5fe48/A",
+    "startedUtc": "2026-10-10T15:16:48.870609+00:00",
+    "endedUtc": "2026-10-10T15:17:04.868927+00:00",
+    "exitCode": 0
+  },
+  {
+    "name": "all-tests",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests/direct",
+      "tests/consensus",
+      "-q",
+      "--junitxml=evidence/phase4e/all-results.xml"
+    ],
+    "cwd": "/workspace/scratch/92144da5fe48/A",
+    "startedUtc": "2026-10-10T15:17:04.869081+00:00",
+    "endedUtc": "2026-10-10T15:17:47.787825+00:00",
+    "exitCode": 0
+  },
+  {
+    "name": "static",
+    "command": [
+      ".venv/bin/genvm-lint",
+      "check",
+      "contracts/context_bound_attestation.py",
+      "--json"
+    ],
+    "cwd": "/workspace/scratch/92144da5fe48/A",
+    "startedUtc": "2026-10-10T15:17:47.788074+00:00",
+    "endedUtc": "2026-10-10T15:18:42.029078+00:00",
+    "exitCode": 0
+  },
+  {
+    "name": "default-types",
+    "command": [
+      ".venv/bin/genvm-lint",
+      "typecheck",
+      "contracts/context_bound_attestation.py",
+      "--json"
+    ],
+    "cwd": "/workspace/scratch/92144da5fe48/A",
+    "startedUtc": "2026-10-10T15:18:42.029261+00:00",
+    "endedUtc": "2026-10-10T15:18:43.133057+00:00",
+    "exitCode": 0
+  },
+  {
+    "name": "strict-types",
+    "command": [
+      ".venv/bin/genvm-lint",
+      "typecheck",
+      "contracts/context_bound_attestation.py",
+      "--strict",
+      "--json"
+    ],
+    "cwd": "/workspace/scratch/92144da5fe48/A",
+    "startedUtc": "2026-10-10T15:18:43.133251+00:00",
+    "endedUtc": "2026-10-10T15:18:44.220232+00:00",
+    "exitCode": 1
+  },
+  {
+    "name": "pip-check",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "/workspace/scratch/92144da5fe48/A",
+    "startedUtc": "2026-10-10T15:18:44.220518+00:00",
+    "endedUtc": "2026-10-10T15:18:44.466934+00:00",
+    "exitCode": 0
+  }
+]

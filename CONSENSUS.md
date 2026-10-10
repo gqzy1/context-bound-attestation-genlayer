@@ -1,3 +1,11 @@
+# Current consensus documentation status — Phase 4E
+
+The mechanism description below remains valid for the unchanged production code. Its Phase 2 NOT RUN/STOP lines describe historical offline testing only, superseded by genuine T01–T10 evidence in ONCHAIN_EVIDENCE_INDEX.md. Current canonical source is main; T04 accepted ELIGIBLE, T07 accepted NOT_ELIGIBLE after one Leader rotation. Exact-label comparison follows independent semantic classification; it is not format-only equivalence. Review PHASE_4E_SUBMISSION_AUDIT.md for current checks and limits.
+
+---
+
+## Historical / Superseded — retained verbatim
+
 # Independent custom consensus — Phase 2
 
 The production contract uses the Phase 0 pinned v0.2.16 SDK's custom

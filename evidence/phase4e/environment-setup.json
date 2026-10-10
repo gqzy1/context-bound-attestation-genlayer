@@ -1,0 +1,39 @@
+{
+  "commands": [
+    {
+      "command": [
+        "python3.12",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "cwd": "/workspace/scratch/92144da5fe48/A",
+      "exitCode": 0,
+      "source": "Actual setup process result"
+    },
+    {
+      "command": [
+        "A/.venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "A/requirements.lock.txt"
+      ],
+      "cwd": "/workspace/scratch/92144da5fe48",
+      "exitCode": 0,
+      "source": "Actual tool result; original complete installation stdout not saved"
+    }
+  ],
+  "download": {
+    "command": [
+      ".venv/bin/genvm-lint",
+      "download",
+      "--version",
+      "v0.2.16"
+    ],
+    "cwd": "A",
+    "startedUtc": "2026-10-10T15:14:16.303561+00:00",
+    "exitCode": 0
+  }
+}

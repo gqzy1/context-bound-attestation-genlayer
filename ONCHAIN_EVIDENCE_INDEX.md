@@ -1,3 +1,21 @@
+# Phase 4E supplemental evidence
+
+New independent read-only records: [raw RPC](evidence/phase4e/rpc-readonly.json), [decoded frontend transaction](evidence/phase4e/frontend-tx-summary.json), [source integrity](evidence/phase4e/source-integrity.json), [all 11 Explorer links](evidence/phase4e/explorer-link-audit.json). Raw receipt confirms frontend transaction FINALIZED / MAJORITY_AGREE / SUCCESS / Return 3; votes 3 agree / 2 idle, rotation 0. Complete calldata independently decoded with unchanged SDK. [Fresh B state reads](https://github.com/gqzy1/contextpass-genlayer/blob/phase4e-submission-readiness/evidence/phase4e/sdk-current-readback.json) confirm Space #3 and counts spaces=3, attestations=1, decisions=2, notes=1. These are Phase 4E records, not edits to old snapshots.
+
+# Current evidence navigation — Phase 4E
+
+T01–T10 structured receipts below and `evidence/phase4c/t01-t10.json` are retained as original evidence. The post-T10 counts snapshot is **historical**; Space #3 was subsequently created by frontend transaction `0x85c5037d3ac249faca70336a6760d4538dc26407181bf71d79da091e6457d02d`. Phase 4E independently visited all 11 transaction detail pages: matching hash/canonical address, FINALIZED. `/transactions/<hash>` redirects to `/tx/<hash>` and is valid; links are retained.
+
+Phase 4D create_space was independently observed in Explorer as Accepted / SUCCESS / Return 3, normal execution, rotation=0, initial validators=5. This is a fresh webpage observation, not a freshly downloaded raw RPC receipt. Current demo read-only checks and limits are in PHASE_4E_SUBMISSION_AUDIT.md.
+
+**Archive availability correction:** B audited main and the locally fetched phase4c-frontend-activation tree do not contain `evidence/phase4c/rpc-http.json.gz`, `onchain-readonly.json.gz`, `user-explorer-screenshots.tar.gz`, `screenshots-index.json`, T07/T08/T09/T10 PNGs or `scripts/verify-onchain-readonly.mjs`. A retains an archive-integrity metadata file, not the archives themselves. The historical claims below must not be read as present binary archive availability. No screenshot was fabricated or recovered in this patch. Use existing A JSON summaries/logs and public transaction pages; original screenshots need separate owner-provided archival if required.
+
+Current canonical source is A main. Prior NOT RUN/NOT PUBLISHED/STOP text below describes Phase 4C, superseded for partial browser/live frontend evidence by Phase 4D/4E. Portal not submitted by this phase.
+
+---
+
+## Historical / Superseded — retained verbatim
+
 # ONCHAIN_EVIDENCE_INDEX — Phase 4C
 
 Stable Studionet / **61999** / `https://studio.genlayer.com/api`。Canonical contract: `0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8`。SHA256: `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`。Wallet A: `0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc`；Wallet B: `0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84`。

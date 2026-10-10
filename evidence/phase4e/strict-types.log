@@ -1,0 +1,122 @@
+{
+  "ok": false,
+  "diagnostics": [
+    {
+      "file": "/workspace/scratch/92144da5fe48/A/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"run_nondet_unsafe\" is partially unknown\n\u00a0\u00a0Type of \"run_nondet_unsafe\" is \"LazyApi[T@run_nondet_unsafe, (leader_fn: () -> T@run_nondet_unsafe, validator_fn: (Return[Unknown] | VMError | UserError) -> bool, /)]\"",
+      "range": {
+        "start": {
+          "line": 255,
+          "character": 19
+        },
+        "end": {
+          "line": 255,
+          "character": 42
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/92144da5fe48/A/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 339,
+          "character": 5
+        },
+        "end": {
+          "line": 339,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/92144da5fe48/A/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 350,
+          "character": 5
+        },
+        "end": {
+          "line": 350,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/92144da5fe48/A/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 361,
+          "character": 5
+        },
+        "end": {
+          "line": 361,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/92144da5fe48/A/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 374,
+          "character": 5
+        },
+        "end": {
+          "line": 374,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/92144da5fe48/A/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 393,
+          "character": 5
+        },
+        "end": {
+          "line": 393,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    },
+    {
+      "file": "/workspace/scratch/92144da5fe48/A/contracts/context_bound_attestation.py",
+      "severity": "error",
+      "message": "Type of \"view\" is partially unknown\n\u00a0\u00a0Type of \"view\" is \"(f: Unknown) -> Unknown\"",
+      "range": {
+        "start": {
+          "line": 413,
+          "character": 5
+        },
+        "end": {
+          "line": 413,
+          "character": 19
+        }
+      },
+      "rule": "reportUnknownMemberType"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  }
+}

@@ -1,3 +1,11 @@
+# Current verification navigation — Phase 4E
+
+Fresh commands, exit codes and outputs are recorded in evidence/phase4e and PHASE_4E_SUBMISSION_AUDIT.md. Earlier test counts below belong to their stated phases, not fresh executions. Known raw Python Strict failures are retained. B scripts/verify-phase4c.py and scripts/verify-onchain-readonly.mjs referenced by earlier documentation are absent in audited main; do not instruct reviewers to run missing scripts. Use the existing commands and test/source files. Prior browser QA is partial; Phase 4D includes one live create_space only.
+
+---
+
+## Historical / Superseded — retained verbatim
+
 # Phase 4C final verification
 
 A240/240 offline PASS; B145/145 offline PASS (124 retained + 20 activation + 1 manifest). Seven test files: activation20,address8,journey1,packaging6,reliability57,transactions39,ui14. Real read-only SDK23/23 operations successful, including ten actual FINALIZED receipts and ten current-state reads. Studio transactions were user-manual, not executed through this frontend. Actual pinned SDK replay of genuine captured receipts is offline evidence only.

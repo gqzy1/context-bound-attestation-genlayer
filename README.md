@@ -1,3 +1,25 @@
+# Phase 4E current review status — 2026-10-10
+
+Canonical source and deployment are on **main**. A audited HEAD `c690a2200569977e99e4cde9bfd52bd86aa4a89e`; B audited HEAD `6a6e8d13c6d73e40c6d185b0918a3e11e786cedc`. Phase 4D merge PRs A #5 / B #4 are already merged. Public hosted demo loaded in Phase 4E and contains the Phase 4D create_space statement.
+
+[Phase 4E audit](PHASE_4E_SUBMISSION_AUDIT.md) is the current submission-readiness decision and fresh test record. This patch is review-only and must not be described as READY FOR SUBMISSION before its unresolved checks are addressed and reviewed. [Live demo](https://gqzy1.github.io/contextpass-genlayer/).
+
+Repository A source and complete B copy are identical: 17,514 bytes; SHA256 `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`; Git blob `10edfd3d23672789b4b600360750f5041c040f6d`. Network Stable Studionet 61999; contract `0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8`. Production source and dependency versions are unchanged.
+
+T01–T10 and frontend create_space transaction links were visited: FINALIZED / correct canonical destination. T07 rotation=1; T08/T10 are expected business Rollbacks, not successful writes. Frontend create_space `0x85c5037d3ac249faca70336a6760d4538dc26407181bf71d79da091e6457d02d` independently displays Return 3 in Explorer. This does not establish live testing of the other four website writes, wallet refusal, switching, mobile signing or reload recovery.
+
+Root #1 revoked; Space #1 historical ELIGIBLE is not current authority; Space #2 historical NOT_ELIGIBLE. Space #3 was subsequently created. `spaces=2` is the historical T10 snapshot. Python Strict's seven known SDK diagnostics remain explicit. Neither repo has a LICENSE; licensing decision is pending.
+
+Prior screenshots referenced by Phase 4C/4D are not present in the audited repository trees. Accessible evidence includes A `evidence/phase4c/t01-t10.json`, state/source summaries and original logs; do not claim missing raw archives or screenshot binaries are archived.
+
+Fresh Phase 4E checks: A **240/240** offline PASS; static/default types PASS; raw Python Strict **FAIL (7 diagnostics)**. B **144/145 PASS, 1 FAIL**: the unmodified packaging test still expects frontendRealWalletTested=false; JSON now accurately records the one tested operation as true with explicit partial scope. npm ci/typecheck/verify:source/build PASS. This stale assertion is not changed in this documentation-only patch. **READY FOR REVIEW**, not READY FOR SUBMISSION.
+
+Fresh independent RPC source retrieval matches A/B bytes. Phase 4D raw receipt confirms MAJORITY_AGREE, SUCCESS / Return 3; current SDK + hosted reads confirm Space #3 fields and counts spaces=3 / attestations=1 / decisions=2 / notes=1. See evidence/phase4e and the audit for raw records and limits.
+
+---
+
+## Historical / Superseded — retained verbatim
+
 # ContextPass — current status (Phase 4D, 2026-10-10)
 
 **Current authoritative project status.** Historical Phase 0–4C reports and the old README below describe their own points in time and are retained for traceability; they are **not** current claims that the product is undeployed, unpublished, or its PRs remain unmerged.

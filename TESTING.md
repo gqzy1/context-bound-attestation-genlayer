@@ -1,3 +1,15 @@
+# Phase 4C final verification
+
+A240/240 offline PASS; B145/145 offline PASS (124 retained + 20 activation + 1 manifest). Seven test files: activation20,address8,journey1,packaging6,reliability57,transactions39,ui14. Real read-only SDK23/23 operations successful, including ten actual FINALIZED receipts and ten current-state reads. Studio transactions were user-manual, not executed through this frontend. Actual pinned SDK replay of genuine captured receipts is offline evidence only.
+
+Run B `python scripts/verify-phase4c.py` for the full current offline harness; it records exact command arrays/cwd/UTC/exits and full logs/JUnit/frontend JSON in A/B evidence/phase4c. It never signs or transacts. TypeScript Strict/build/source/static/default types PASS. Raw Python Strict FAIL retains exactly seven upstream reportUnknownMemberType diagnostics with no suppression. See PHASE_4C_INTEGRATION_REPORT.md for commands and risks.
+
+The optional separately authorized read-only snapshot tool is B scripts/verify-onchain-readonly.mjs; it rate-spaces reads, rejects writes and stops on429. Current original snapshots are gzip archived with SHA, not silently replaced with a rerun. Real browser/wallet/sign/submission/reload QA NOT RUN; normal Chrome local URL returned ERR_CONNECTION_REFUSED. RELEASE_READINESS_CHECKLIST.md contains manual QA. Pages not published.
+
+Historical tests below accurately describe their earlier unexecuted network status; ONCHAIN_EVIDENCE_INDEX.md supersedes only current T/network facts. S01–S20 remain offline script classifications, not twenty new real model tests.
+
+## Historical test documentation
+
 # Phase 4B verification
 
 Address suite: 77/77 PASS. A total: 240/240 PASS (163 existing + 77 new). B frontend: 124/124 PASS (116 existing + 8 new). All offline; scripted semantic outcomes are not real model/validator results. See Phase 4B report and evidence/phase4b for actual commands and the intentional pre-fix INVALID_ADDRESS failure. Python Strict retains upstream diagnostics; final status is recorded in the report. No suppression or SDK patch.

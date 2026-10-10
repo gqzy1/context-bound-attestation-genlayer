@@ -1,0 +1,80 @@
+{
+  "account": {
+    "login": "gqzy1",
+    "id": 155161534
+  },
+  "phase4cBranches": {
+    "a": {
+      "branch": "phase4c-evidence-closure",
+      "base": "phase4b-address-compatibility",
+      "baseSha": "c7c6e50620602d03ad4e3c116ad1532097feab8a"
+    },
+    "b": {
+      "branch": "phase4c-frontend-activation",
+      "base": "phase4b-address-compatibility",
+      "baseSha": "3eeb4ff52359ffe39e146cce4ac402def612d503"
+    }
+  },
+  "initialPullRequests": [
+    {
+      "url": "https://github.com/gqzy1/context-bound-attestation-genlayer/pull/3",
+      "number": 3,
+      "draft": true,
+      "state": "open",
+      "merged": false,
+      "base": "phase2-independent-consensus",
+      "baseSha": "daf0bf9a70357fb626b0a8e732826c8db6e0c1fc",
+      "head": "phase4b-address-compatibility",
+      "headSha": "c7c6e50620602d03ad4e3c116ad1532097feab8a",
+      "author": "gqzy1"
+    },
+    {
+      "url": "https://github.com/gqzy1/context-bound-attestation-genlayer/pull/2",
+      "number": 2,
+      "draft": true,
+      "state": "open",
+      "merged": false,
+      "base": "phase1-deterministic-core",
+      "baseSha": "6f498abbf1525f304174ed2018509a4445d441c8",
+      "head": "phase2-independent-consensus",
+      "headSha": "daf0bf9a70357fb626b0a8e732826c8db6e0c1fc",
+      "author": "gqzy1"
+    },
+    {
+      "url": "https://github.com/gqzy1/context-bound-attestation-genlayer/pull/1",
+      "number": 1,
+      "draft": true,
+      "state": "open",
+      "merged": false,
+      "base": "main",
+      "baseSha": "770aa5d4cf6d4ef2b6ef28fb8c81c78230a6fa0b",
+      "head": "phase1-deterministic-core",
+      "headSha": "6f498abbf1525f304174ed2018509a4445d441c8",
+      "author": "gqzy1"
+    },
+    {
+      "url": "https://github.com/gqzy1/contextpass-genlayer/pull/2",
+      "number": 2,
+      "draft": true,
+      "state": "open",
+      "merged": false,
+      "base": "phase3-frontend-integration",
+      "baseSha": "3c9760cf6e1eb444123b9a85296a174fd98b4123",
+      "head": "phase4b-address-compatibility",
+      "headSha": "3eeb4ff52359ffe39e146cce4ac402def612d503",
+      "author": "gqzy1"
+    },
+    {
+      "url": "https://github.com/gqzy1/contextpass-genlayer/pull/1",
+      "number": 1,
+      "draft": true,
+      "state": "open",
+      "merged": false,
+      "base": "main",
+      "baseSha": "5095cdc5503dda4642c917cfa4576d1286c36319",
+      "head": "phase3-frontend-integration",
+      "headSha": "3c9760cf6e1eb444123b9a85296a174fd98b4123",
+      "author": "gqzy1"
+    }
+  ]
+}

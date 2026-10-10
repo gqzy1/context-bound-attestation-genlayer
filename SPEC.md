@@ -8,8 +8,8 @@ authoritative. This file documents concrete representation choices only.
 `Space`, `RootAttestation`, `AdmissionDecision` and `RoomNote` are
 `@allow_storage` records. Counters and record IDs use `u256`. Persisted maps
 are `TreeMap`; per-room note IDs use `TreeMap[u256, DynArray[u256]]`. Plain
-Python dictionaries/lists occur only as bounded ABI responses, never as
-persisted state. The constructor takes no arguments.
+Python dictionaries/lists are transient parsing, consensus or ABI values,
+never persisted state. The constructor takes no arguments.
 
 Root: absent → active → revoked. Only issuer revokes; repeated revocation
 rejects `ALREADY_REVOKED`. Room requirements/trusted issuer and root contents
@@ -24,8 +24,9 @@ Equal numeric values in different ID domains do not imply a derived root:
 
 The deterministic write path validates ownership, active root, trusted issuer
 and absent prior decision, then calls the private semantic boundary. That
-boundary always raises in Phase 1. Tests replace it locally to exercise the
-post-boundary transitions; production has no switch accepting such results.
+boundary now executes the frozen independent custom consensus. Only an
+accepted canonical result can return for deterministic persistence; production
+has no switch accepting client/test decisions. See CONSENSUS.md.
 
 `ELIGIBLE` + exact room/holder/root binding + active root + trusted original
 issuer yields active membership at read time. A revoked root yields false

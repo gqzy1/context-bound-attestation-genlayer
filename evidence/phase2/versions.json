@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "genlayer-test": "0.29.2",
+    "genvm-linter": "0.11.0",
+    "pytest": "9.1.1",
+    "genlayer-py": "0.16.3",
+    "web3": "8.0.0",
+    "pyright": "1.1.414"
+  },
+  "cloudpickle_runner": "1dlk6mnfabi0z7r39635amyfzw8xb6rm8bv4pmgv6ji1bfx9hghd",
+  "cloudpickle_source_sha256": "c5c702622f868ba3e8d9897d935cce0ebddbcfd39c031eec86b819a7a1ccd044"
+}

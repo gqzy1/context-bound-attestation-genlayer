@@ -1,0 +1,53 @@
+{
+  "evidenceType": "Fresh read-only RPC, decoded offline using unchanged genlayer-js 1.1.8",
+  "hash": "0x85c5037d3ac249faca70336a6760d4538dc26407181bf71d79da091e6457d02d",
+  "sender": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+  "recipient": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+  "status": "FINALIZED",
+  "resultName": "MAJORITY_AGREE",
+  "executionMode": "NORMAL",
+  "rotationCount": 0,
+  "initialValidators": 5,
+  "leaderExecution": "SUCCESS",
+  "returnCodeByte": 0,
+  "returned": "3",
+  "call": {
+    "args": [
+      "ContextPass Frontend QA",
+      "Contribute a reproducible end-to-end test report for the ContextPass frontend.",
+      {
+        "bytes": {
+          "0": 235,
+          "1": 86,
+          "2": 242,
+          "3": 69,
+          "4": 239,
+          "5": 236,
+          "6": 237,
+          "7": 8,
+          "8": 153,
+          "9": 183,
+          "10": 226,
+          "11": 54,
+          "12": 151,
+          "13": 254,
+          "14": 229,
+          "15": 18,
+          "16": 163,
+          "17": 157,
+          "18": 189,
+          "19": 204
+        }
+      }
+    ],
+    "method": "create_space"
+  },
+  "votes": {
+    "0x36728d2a123aB444E603EE5b2ad17d18Bb193557": "agree",
+    "0x6737ca1d6BDF8b7C4f19143E2D55581Ca64eb7C3": "agree",
+    "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE": "idle",
+    "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "idle",
+    "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658": "agree"
+  },
+  "queriedUtc": "2026-10-10T15:15:32.648773+00:00"
+}

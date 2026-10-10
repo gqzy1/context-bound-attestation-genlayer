@@ -1,0 +1,106 @@
+{
+  "auditDate": "2026-10-10",
+  "finding": "All 11 existing /transactions links redirected to matching valid /tx detail pages. No invalid-link replacement performed. Search-service opens were unavailable; browser succeeded.",
+  "entries": [
+    {
+      "step": "T01",
+      "hash": "0x26282c539033879705d9a8dea18c8676dae46c0cd09df9f91cb20d740f9be994",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0x26282c539033879705d9a8dea18c8676dae46c0cd09df9f91cb20d740f9be994",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0x26282c539033879705d9a8dea18c8676dae46c0cd09df9f91cb20d740f9be994",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T02",
+      "hash": "0x7ee1a2f00471548e57d7f88df97ac2eed586c5a2e219f7e0ef1626fe78a58208",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0x7ee1a2f00471548e57d7f88df97ac2eed586c5a2e219f7e0ef1626fe78a58208",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0x7ee1a2f00471548e57d7f88df97ac2eed586c5a2e219f7e0ef1626fe78a58208",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T03",
+      "hash": "0x5392bec255be79edc94e01992bfae19c13a66b71e416a0a0e37fa4e9249a0108",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0x5392bec255be79edc94e01992bfae19c13a66b71e416a0a0e37fa4e9249a0108",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0x5392bec255be79edc94e01992bfae19c13a66b71e416a0a0e37fa4e9249a0108",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T04",
+      "hash": "0xd977e00d326e41b972c1560f3912b0c7f4cc1e8766544a0c7052956243bc0e50",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0xd977e00d326e41b972c1560f3912b0c7f4cc1e8766544a0c7052956243bc0e50",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0xd977e00d326e41b972c1560f3912b0c7f4cc1e8766544a0c7052956243bc0e50",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T05",
+      "hash": "0xc36ffd19c14b7a522ea1287b8b7440dc3494d1fbba232528e9e3e4811e2532d2",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0xc36ffd19c14b7a522ea1287b8b7440dc3494d1fbba232528e9e3e4811e2532d2",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0xc36ffd19c14b7a522ea1287b8b7440dc3494d1fbba232528e9e3e4811e2532d2",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T06",
+      "hash": "0x7592f079b93662134a88d14a34242817314cfe02a413cd36584afd70d0ffb61d",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0x7592f079b93662134a88d14a34242817314cfe02a413cd36584afd70d0ffb61d",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0x7592f079b93662134a88d14a34242817314cfe02a413cd36584afd70d0ffb61d",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T07",
+      "hash": "0xbd5200b6dfbca29c91bd4c4f0d473b4447af4042e35b7db5423766a6ced838c6",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0xbd5200b6dfbca29c91bd4c4f0d473b4447af4042e35b7db5423766a6ced838c6",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0xbd5200b6dfbca29c91bd4c4f0d473b4447af4042e35b7db5423766a6ced838c6",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T08",
+      "hash": "0x42765027562169a896139dc2d676a4c0140179bdbd610c8d873e09ce6557a2dc",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0x42765027562169a896139dc2d676a4c0140179bdbd610c8d873e09ce6557a2dc",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0x42765027562169a896139dc2d676a4c0140179bdbd610c8d873e09ce6557a2dc",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T09",
+      "hash": "0xcf88f40a1beab8a8c979b7c0f3442e0ba484ac79bda78da8668c4d214669f2d6",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0xcf88f40a1beab8a8c979b7c0f3442e0ba484ac79bda78da8668c4d214669f2d6",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0xcf88f40a1beab8a8c979b7c0f3442e0ba484ac79bda78da8668c4d214669f2d6",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "T10",
+      "hash": "0x9b3365e65452c635a0663218edec0913dddf59f777b1be9209b03763959da01b",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0x9b3365e65452c635a0663218edec0913dddf59f777b1be9209b03763959da01b",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0x9b3365e65452c635a0663218edec0913dddf59f777b1be9209b03763959da01b",
+      "observedStatus": "FINALIZED",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser transaction detail observation; not a new raw RPC receipt"
+    },
+    {
+      "step": "Phase4D",
+      "hash": "0x85c5037d3ac249faca70336a6760d4538dc26407181bf71d79da091e6457d02d",
+      "requestedUrl": "https://explorer-studio.genlayer.com/transactions/0x85c5037d3ac249faca70336a6760d4538dc26407181bf71d79da091e6457d02d",
+      "finalUrl": "https://explorer-studio.genlayer.com/tx/0x85c5037d3ac249faca70336a6760d4538dc26407181bf71d79da091e6457d02d",
+      "observedStatus": "FINALIZED",
+      "observedReturn": "3",
+      "observedCanonicalDestination": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+      "observationType": "Phase 4E browser detail and fresh read-only RPC"
+    }
+  ]
+}

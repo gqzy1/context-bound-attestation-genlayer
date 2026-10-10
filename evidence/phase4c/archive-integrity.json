@@ -1,0 +1,12 @@
+{
+  "rpc-http.json": {
+    "sha256": "dc453e8e1b6858cac8f38cbc7e8756e8c15716b6635fbb83f0799294b5c86c1a",
+    "bytes": 528235,
+    "gzipSha256": "737e9d5853c779ea5fa8731b1b64c63a5ffbc06571283b19f6afe295628ad32d"
+  },
+  "onchain-readonly.json": {
+    "sha256": "3e5fa439a6184cd5020d6430bed40c731e428fc911b1815e3d00f96805c6e4dc",
+    "bytes": 1162009,
+    "gzipSha256": "a654203fa928444237f602fdc5d17c031eeb4e386e533a5609aeda54c9c87093"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "attempt": "Normal cloud Chrome via cua_repl; Vite ready on 127.0.0.1:5173",
+  "url": "http://127.0.0.1:5173/contextpass-genlayer/",
+  "result": "net::ERR_CONNECTION_REFUSED",
+  "desktopVisual": "NOT RUN",
+  "mobileVisual": "NOT RUN",
+  "consoleQA": "NOT RUN",
+  "realFrontendWallet": "NOT RUN",
+  "walletSignature": "NOT RUN",
+  "frontendSubmittedTransactionRecovery": "NOT RUN",
+  "pages": "NOT PUBLISHED",
+  "workaround": "none; server stopped"
+}

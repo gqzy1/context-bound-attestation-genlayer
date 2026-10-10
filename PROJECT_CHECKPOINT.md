@@ -1,3 +1,19 @@
+# PROJECT_CHECKPOINT — Phase 4C
+
+Account gqzy1 / 155161534 reverified. A new branch phase4c-evidence-closure based on c7c6e50620602d03ad4e3c116ad1532097feab8a; B phase4c-frontend-activation based on 3eeb4ff52359ffe39e146cce4ac402def612d503. Both base branch phase4b-address-compatibility. Existing five Draft PRs and both main branches remain unchanged.
+
+Canonical deployment `0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8`, SHA `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`; A/B/deployed bytes equal. Root=1 revoked; room1=1 historical ELIGIBLE but active=false; room2=2 NOT_ELIGIBLE/active=false; note=1 retained. T01–T10 FINALIZED/MAJORITY_AGREE rechecked via real read-only RPC, T08/T10 expected rollback, T07 first-round JSON parse error/disagree then rotation1 and Accepted denial. See ONCHAIN_EVIDENCE_INDEX.md; never replace this with five-vote-unanimous claims.
+
+B frontend fixed-target production activation and actual Leader receipt selection implemented; manual wallet signing only, two independent canonical guards, original wallet/rate/journal/readback protections retained. A has no contract change. Frontend real signing/recovery/browser visuals remain NOT RUN. Phase4C sends/deploys/merges/publishes nothing.
+
+New Draft PRs: A_PHASE4C_DRAFT_PR_PENDING / B_PHASE4C_DRAFT_PR_PENDING. Final tested results and commands: PHASE_4C_INTEGRATION_REPORT.md and evidence/phase4c/. Python Strict retains seven upstream FAIL diagnostics. New branch source equals canonical source; freeze and dependency locks unchanged.
+
+Future authorized merge order, only after separate approval: A #1→#2→#3→Phase4C; B #1→#2→Phase4C. Review/retarget stacked bases as parents merge; avoid dropping inherited implementation. A main is not current canonical. No PR is merged now.
+
+**STOP.** Await manual acceptance and explicit later release/Pages authorization. Do not start Portal, new real wallet tests/transactions, deployment, protocol changes or a later phase automatically. Release readiness remains blocked by outstanding real frontend/browser QA and approval.
+
+## Historical checkpoints (superseded for current status)
+
 # Phase 4B address compatibility checkpoint
 
 Account: gqzy1, ID 155161534 verified. New branch: phase4b-address-compatibility. A base: daf0bf9a70357fb626b0a8e732826c8db6e0c1fc; B base: 3c9760cf6e1eb444123b9a85296a174fd98b4123. Original branches/PRs/main are unchanged. A/B source SHA256: `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`, byte-identical. Only `_address` changes in production contract; original method ABI, permissions, state machine, frozen prompt and custom consensus remain unchanged.

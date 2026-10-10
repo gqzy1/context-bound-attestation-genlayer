@@ -1,3 +1,15 @@
+# ContextPass — Phase 4C evidence closure
+
+Canonical Stable Studionet61999 contract `0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8`, byte-identical deployed/A/B source SHA `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`. User manually completed T01–T10; this phase independently rechecked23read-only SDK operations, all10FINALIZED receipts and current revoked/activefalse state. No contract/source/freeze/consensus change. No chain transaction, deploy, merge or publication in this phase.
+
+A new phase4c-evidence-closure Draft targets phase4b-address-compatibility (A_PHASE4C_DRAFT_PR_PENDING). A main remains bootstrap, not canonical. Source baseline c7c6e50620602d03ad4e3c116ad1532097feab8a. B new frontend integration Draft: B_PHASE4C_DRAFT_PR_PENDING.
+
+[Actual evidence](ONCHAIN_EVIDENCE_INDEX.md) · [Phase4C report](PHASE_4C_INTEGRATION_REPORT.md) · [Release gate](RELEASE_READINESS_CHECKLIST.md) · [Deployment](DEPLOYMENT_STUDIONET.md). A240offline PASS, B145offline PASS, static/default/TSbuild PASS; PythonStrict original7FAIL. Real frontend wallet/browser QA NOT RUN. T07rotation1 and first-round parse error/disagree are retained; finalAccepted denial isn't a unanimity claim. Root1revoked, historicRoom1ELIGIBLE doesn't grant current access.
+
+**STOP pending manual acceptance/further explicit release authorization.** No PR is merged, Pages not published, Portal not submitted. Earlier candidate-only documentation below is historical and superseded for deployment status by the links above.
+
+## Historical README
+
 # Phase 4B address compatibility candidate
 
 This branch contains the minimum `_address` normalization fix. Patched SHA256: `e50cb6703ba63da5095dafc5d9867246888c5151d0773489aed3166033484b3d`. Review `PHASE_4B_ADDRESS_COMPATIBILITY_REPORT.md`. The previously reported deployment at `0x97B9003a17A8EDBD1b5E3379AA659753791497d9` uses the old source and is not patched by this PR. T02–T10 remain paused. No deployment, transaction, merge or frontend unlock was performed. Earlier phase reports below remain historical.
@@ -95,4 +107,3 @@ Network reserved for later authorized stages: **Stable Studionet only**,
 chain ID **61999**, RPC `https://studio.genlayer.com/api`, explorer
 `https://explorer-studio.genlayer.com/`. No key/seed is needed for these tests.
 **Do not deploy this offline draft. STOP pending explicit Phase 3 approval.**
-

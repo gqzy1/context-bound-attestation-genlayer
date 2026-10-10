@@ -1,0 +1,343 @@
+[
+  {
+    "name": "chainId",
+    "at": "2026-10-10T08:44:31.285Z",
+    "value": 61999,
+    "ok": true
+  },
+  {
+    "name": "schema",
+    "at": "2026-10-10T08:44:39.233Z",
+    "value": {
+      "ctor": {
+        "params": [],
+        "kwparams": {}
+      },
+      "methods": {
+        "apply_and_join": {
+          "params": [
+            [
+              "space_id",
+              "int"
+            ],
+            [
+              "root_attestation_id",
+              "int"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": false,
+          "ret": "string",
+          "payable": false
+        },
+        "create_space": {
+          "params": [
+            [
+              "title",
+              "string"
+            ],
+            [
+              "required_scope",
+              "string"
+            ],
+            [
+              "trusted_issuer",
+              "address"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": false,
+          "ret": "int",
+          "payable": false
+        },
+        "get_attestation": {
+          "params": [
+            [
+              "root_id",
+              "int"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": true,
+          "ret": {
+            "$dict": {
+              "$or": [
+                "string",
+                "int",
+                "bool"
+              ]
+            }
+          }
+        },
+        "get_counts": {
+          "params": [],
+          "kwparams": {},
+          "readonly": true,
+          "ret": {
+            "$dict": "int"
+          }
+        },
+        "get_decision": {
+          "params": [
+            [
+              "space_id",
+              "int"
+            ],
+            [
+              "holder",
+              "address"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": true,
+          "ret": {
+            "$dict": {
+              "$or": [
+                "string",
+                "int",
+                "bool"
+              ]
+            }
+          }
+        },
+        "get_room_notes": {
+          "params": [
+            [
+              "space_id",
+              "int"
+            ],
+            [
+              "offset",
+              "int"
+            ],
+            [
+              "limit",
+              "int"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": true,
+          "ret": {
+            "$dict": {
+              "$or": [
+                "string",
+                "int",
+                [
+                  {
+                    "$rep": {
+                      "$dict": {
+                        "$or": [
+                          "string",
+                          "int"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        "get_space": {
+          "params": [
+            [
+              "space_id",
+              "int"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": true,
+          "ret": {
+            "$dict": {
+              "$or": [
+                "string",
+                "int",
+                "bool"
+              ]
+            }
+          }
+        },
+        "is_active_member": {
+          "params": [
+            [
+              "space_id",
+              "int"
+            ],
+            [
+              "holder",
+              "address"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": true,
+          "ret": "bool"
+        },
+        "issue_attestation": {
+          "params": [
+            [
+              "holder",
+              "address"
+            ],
+            [
+              "label",
+              "string"
+            ],
+            [
+              "source_scope",
+              "string"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": false,
+          "ret": "int",
+          "payable": false
+        },
+        "post_room_note": {
+          "params": [
+            [
+              "space_id",
+              "int"
+            ],
+            [
+              "text",
+              "string"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": false,
+          "ret": "int",
+          "payable": false
+        },
+        "revoke_attestation": {
+          "params": [
+            [
+              "attestation_id",
+              "int"
+            ]
+          ],
+          "kwparams": {},
+          "readonly": false,
+          "ret": "null",
+          "payable": false
+        }
+      }
+    },
+    "ok": true
+  },
+  {
+    "name": "counts",
+    "at": "2026-10-10T08:44:48.638Z",
+    "value": {
+      "attestations": "1",
+      "decisions": "2",
+      "notes": "1",
+      "spaces": "2"
+    },
+    "ok": true
+  },
+  {
+    "name": "root1",
+    "at": "2026-10-10T08:44:50.362Z",
+    "value": {
+      "holder": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+      "id": "1",
+      "issuer": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+      "label": "React UI components",
+      "revoked": true,
+      "source_scope": "Can develop and maintain React UI components.",
+      "status": "FOUND"
+    },
+    "ok": true
+  },
+  {
+    "name": "room1",
+    "at": "2026-10-10T08:44:52.098Z",
+    "value": {
+      "id": "1",
+      "owner": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+      "required_scope": "Contribute React UI components to this room.",
+      "status": "FOUND",
+      "title": "React Components",
+      "trusted_issuer": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc"
+    },
+    "ok": true
+  },
+  {
+    "name": "room2",
+    "at": "2026-10-10T08:44:53.829Z",
+    "value": {
+      "id": "2",
+      "owner": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+      "required_scope": "Perform security audits of production authentication systems.",
+      "status": "FOUND",
+      "title": "Security Audit",
+      "trusted_issuer": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc"
+    },
+    "ok": true
+  },
+  {
+    "name": "decision1",
+    "at": "2026-10-10T08:44:55.584Z",
+    "value": {
+      "decision": "ELIGIBLE",
+      "holder": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+      "root_attestation_id": "1",
+      "space_id": "1",
+      "status": "FOUND"
+    },
+    "ok": true
+  },
+  {
+    "name": "decision2",
+    "at": "2026-10-10T08:44:57.317Z",
+    "value": {
+      "decision": "NOT_ELIGIBLE",
+      "holder": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+      "root_attestation_id": "1",
+      "space_id": "2",
+      "status": "FOUND"
+    },
+    "ok": true
+  },
+  {
+    "name": "active1",
+    "at": "2026-10-10T08:44:59.052Z",
+    "value": false,
+    "ok": true
+  },
+  {
+    "name": "active2",
+    "at": "2026-10-10T08:45:00.795Z",
+    "value": false,
+    "ok": true
+  },
+  {
+    "name": "notes1",
+    "at": "2026-10-10T08:45:02.540Z",
+    "value": {
+      "next_offset": "1",
+      "notes": [
+        {
+          "author": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+          "id": "1",
+          "space_id": "1",
+          "text": "Hello from an approved member"
+        }
+      ],
+      "status": "FOUND",
+      "total": "1"
+    },
+    "ok": true
+  },
+  {
+    "name": "notes2",
+    "at": "2026-10-10T08:45:04.390Z",
+    "value": {
+      "next_offset": "0",
+      "notes": [],
+      "status": "FOUND",
+      "total": "0"
+    },
+    "ok": true
+  }
+]

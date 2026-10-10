@@ -1,0 +1,1703 @@
+[
+  {
+    "step": "T01",
+    "recheckedAt": "2026-10-10T08:44:40.987Z",
+    "transactionId": "0x26282c539033879705d9a8dea18c8676dae46c0cd09df9f91cb20d740f9be994",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0x26282c539033879705d9a8dea18c8676dae46c0cd09df9f91cb20d740f9be994",
+    "sender": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "agree",
+      "0xE6BD8050758CB15fC88387223E31Ae2708B119dC": "agree",
+      "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67": "agree",
+      "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "agree"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+      "executionResult": "SUCCESS",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Return",
+        "value": null
+      },
+      "equivalenceOutputs": {}
+    },
+    "input": {},
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T02",
+    "recheckedAt": "2026-10-10T08:44:41.951Z",
+    "transactionId": "0x7ee1a2f00471548e57d7f88df97ac2eed586c5a2e219f7e0ef1626fe78a58208",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0x7ee1a2f00471548e57d7f88df97ac2eed586c5a2e219f7e0ef1626fe78a58208",
+    "sender": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x90402341F0B0e97b23023c0a87de957FB7148E0F",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "agree",
+      "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2": "agree",
+      "0x90402341F0B0e97b23023c0a87de957FB7148E0F": "idle",
+      "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67": "agree",
+      "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658": "idle"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100",
+      "executionResult": "SUCCESS",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Return",
+        "value": "1"
+      },
+      "equivalenceOutputs": {}
+    },
+    "input": {
+      "args": [
+        "541538612603074768941462119095399617015271840388",
+        "React UI components",
+        "Can develop and maintain React UI components."
+      ],
+      "method": "issue_attestation"
+    },
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T03",
+    "recheckedAt": "2026-10-10T08:44:42.728Z",
+    "transactionId": "0x5392bec255be79edc94e01992bfae19c13a66b71e416a0a0e37fa4e9249a0108",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0x5392bec255be79edc94e01992bfae19c13a66b71e416a0a0e37fa4e9249a0108",
+    "sender": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x4404Fb70d490c935758146f42A73DC850FF95C71",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x9ea87b28DcA2F79fe108CF06a4c13B4c876AC23d",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x4404Fb70d490c935758146f42A73DC850FF95C71": "agree",
+      "0x9ea87b28DcA2F79fe108CF06a4c13B4c876AC23d": "agree",
+      "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE": "agree",
+      "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67": "idle",
+      "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "idle"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+      "executionResult": "SUCCESS",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Return",
+        "value": "1"
+      },
+      "equivalenceOutputs": {}
+    },
+    "input": {
+      "args": [
+        "React Components",
+        "Contribute React UI components to this room.",
+        "1343551800202270405973087331704405998159169174988"
+      ],
+      "method": "create_space"
+    },
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T04",
+    "recheckedAt": "2026-10-10T08:44:43.458Z",
+    "transactionId": "0xd977e00d326e41b972c1560f3912b0c7f4cc1e8766544a0c7052956243bc0e50",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0xd977e00d326e41b972c1560f3912b0c7f4cc1e8766544a0c7052956243bc0e50",
+    "sender": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "ELIGIBLE"
+            },
+            "equivalenceOutputs": {
+              "0": {
+                "code": "Return",
+                "value": {
+                  "decision": "ELIGIBLE"
+                }
+              }
+            }
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "ELIGIBLE"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x90402341F0B0e97b23023c0a87de957FB7148E0F",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "ELIGIBLE"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "agree",
+      "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2": "agree",
+      "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84": "idle",
+      "0x90402341F0B0e97b23023c0a87de957FB7148E0F": "idle"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100",
+      "executionResult": "SUCCESS",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Return",
+        "value": "ELIGIBLE"
+      },
+      "equivalenceOutputs": {
+        "0": {
+          "code": "Return",
+          "value": {
+            "decision": "ELIGIBLE"
+          }
+        }
+      }
+    },
+    "input": {
+      "args": [
+        "1",
+        "1"
+      ],
+      "method": "apply_and_join"
+    },
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T05",
+    "recheckedAt": "2026-10-10T08:44:44.185Z",
+    "transactionId": "0xc36ffd19c14b7a522ea1287b8b7440dc3494d1fbba232528e9e3e4811e2532d2",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0xc36ffd19c14b7a522ea1287b8b7440dc3494d1fbba232528e9e3e4811e2532d2",
+    "sender": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "1"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb": "idle",
+      "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47": "agree",
+      "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88": "idle",
+      "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67": "agree",
+      "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658": "agree"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67",
+      "executionResult": "SUCCESS",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Return",
+        "value": "1"
+      },
+      "equivalenceOutputs": {}
+    },
+    "input": {
+      "args": [
+        "1",
+        "Hello from an approved member"
+      ],
+      "method": "post_room_note"
+    },
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T06",
+    "recheckedAt": "2026-10-10T08:44:44.962Z",
+    "transactionId": "0x7592f079b93662134a88d14a34242817314cfe02a413cd36584afd70d0ffb61d",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0x7592f079b93662134a88d14a34242817314cfe02a413cd36584afd70d0ffb61d",
+    "sender": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "2"
+            },
+            "equivalenceOutputs": {}
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "2"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x4404Fb70d490c935758146f42A73DC850FF95C71",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "2"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "2"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "idle",
+      "0x36728d2a123aB444E603EE5b2ad17d18Bb193557": "agree",
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "idle",
+      "0x4404Fb70d490c935758146f42A73DC850FF95C71": "agree",
+      "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47": "agree"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+      "executionResult": "SUCCESS",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Return",
+        "value": "2"
+      },
+      "equivalenceOutputs": {}
+    },
+    "input": {
+      "args": [
+        "Security Audit",
+        "Perform security audits of production authentication systems.",
+        "1343551800202270405973087331704405998159169174988"
+      ],
+      "method": "create_space"
+    },
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T07",
+    "recheckedAt": "2026-10-10T08:44:45.696Z",
+    "transactionId": "0xbd5200b6dfbca29c91bd4c4f0d473b4447af4042e35b7db5423766a6ced838c6",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0xbd5200b6dfbca29c91bd4c4f0d473b4447af4042e35b7db5423766a6ced838c6",
+    "sender": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Leader Rotation",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0x9ea87b28DcA2F79fe108CF06a4c13B4c876AC23d",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Traceback (most recent call last):\n  File \"/py/libs/_genlayer_runner.py\", line 193, in <module>\n    _give_result(lambda: runner(stage_data))\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/py/libs/_genlayer_runner.py\", line 65, in _give_result\n    res = res_fn()\n  File \"/py/libs/_genlayer_runner.py\", line 193, in <lambda>\n    _give_result(lambda: runner(stage_data))\n                         ~~~~~~^^^^^^^^^^^^\n  File \"/py/libs/genlayer/gl/vm.py\", line 181, in <lambda>\n    'data_leader': cloudpickle.dumps(lambda _: leader_fn()),\n                                               ~~~~~~~~~^^\n  File \"/contract.py\", line 240, in leader\n    return {\"decision\": _classify(prompt)[\"decision\"]}\n                        ~~~~~~~~~^^^^^^^^\n  File \"/contract.py\", line 89, in _classify\n    return _parse_output(gl.nondet.exec_prompt(prompt, response_format=\"text\"))\n  File \"/contract.py\", line 82, in _parse_output\n    parsed: object = json.loads(raw, object_pairs_hook=_unique_object)\n                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/py/std/json/__init__.py\", line 359, in loads\n    return cls(**kw).decode(s)\n           ~~~~~~~~~~~~~~~~^^^\n  File \"/py/std/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/py/std/json/decoder.py\", line 363, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "exit_code 1"
+            },
+            "equivalenceOutputs": {
+              "0": {
+                "code": "ContractError",
+                "value": "exit_code 1"
+              }
+            }
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "disagree",
+            "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "exit_code 1"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "disagree",
+            "validatorAddress": "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "exit_code 1"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "disagree",
+            "validatorAddress": "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "exit_code 1"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      },
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "NOT_ELIGIBLE"
+            },
+            "equivalenceOutputs": {
+              "0": {
+                "code": "Return",
+                "value": {
+                  "decision": "NOT_ELIGIBLE"
+                }
+              }
+            }
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "NOT_ELIGIBLE"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": "NOT_ELIGIBLE"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 1,
+    "initialValidators": 5,
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+      "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb": "agree",
+      "0x36728d2a123aB444E603EE5b2ad17d18Bb193557": "agree",
+      "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84": "idle",
+      "0xE6BD8050758CB15fC88387223E31Ae2708B119dC": "idle"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+      "executionResult": "SUCCESS",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Return",
+        "value": "NOT_ELIGIBLE"
+      },
+      "equivalenceOutputs": {
+        "0": {
+          "code": "Return",
+          "value": {
+            "decision": "NOT_ELIGIBLE"
+          }
+        }
+      }
+    },
+    "input": {
+      "args": [
+        "2",
+        "1"
+      ],
+      "method": "apply_and_join"
+    },
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T08",
+    "recheckedAt": "2026-10-10T08:44:46.419Z",
+    "transactionId": "0x42765027562169a896139dc2d676a4c0140179bdbd610c8d873e09ce6557a2dc",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0x42765027562169a896139dc2d676a4c0140179bdbd610c8d873e09ce6557a2dc",
+    "sender": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Rollback",
+              "value": "ACTIVE_MEMBER_ONLY"
+            },
+            "equivalenceOutputs": {}
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Rollback",
+              "value": "ACTIVE_MEMBER_ONLY"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Rollback",
+              "value": "ACTIVE_MEMBER_ONLY"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+      "0x36728d2a123aB444E603EE5b2ad17d18Bb193557": "idle",
+      "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE": "idle",
+      "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88": "agree",
+      "0xE6BD8050758CB15fC88387223E31Ae2708B119dC": "agree"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+      "executionResult": "ERROR",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Rollback",
+        "value": "ACTIVE_MEMBER_ONLY"
+      },
+      "equivalenceOutputs": {}
+    },
+    "input": {
+      "args": [
+        "2",
+        "should not pass"
+      ],
+      "method": "post_room_note"
+    },
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T09",
+    "recheckedAt": "2026-10-10T08:44:47.147Z",
+    "transactionId": "0xcf88f40a1beab8a8c979b7c0f3442e0ba484ac79bda78da8668c4d214669f2d6",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0xcf88f40a1beab8a8c979b7c0f3442e0ba484ac79bda78da8668c4d214669f2d6",
+    "sender": "0xEB56F245EFEceD0899b7e23697FeE512a39DBdCc",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x4aba638Cf0Cf5249437AaD968fC69dde46ae6BAC",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE",
+            "executionResult": "SUCCESS",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Return",
+              "value": null
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x4aba638Cf0Cf5249437AaD968fC69dde46ae6BAC": "agree",
+      "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2": "agree",
+      "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE": "agree",
+      "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88": "agree",
+      "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "agree"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2",
+      "executionResult": "SUCCESS",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Return",
+        "value": null
+      },
+      "equivalenceOutputs": {}
+    },
+    "input": {
+      "args": [
+        "1"
+      ],
+      "method": "revoke_attestation"
+    },
+    "executionMode": "NORMAL"
+  },
+  {
+    "step": "T10",
+    "recheckedAt": "2026-10-10T08:44:47.874Z",
+    "transactionId": "0x9b3365e65452c635a0663218edec0913dddf59f777b1be9209b03763959da01b",
+    "explorerUrl": "https://explorer-studio.genlayer.com/transactions/0x9b3365e65452c635a0663218edec0913dddf59f777b1be9209b03763959da01b",
+    "sender": "0x5EDb6E65aaEA10A7B3CC34e8d5724e41D1f6da84",
+    "contract": "0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8",
+    "status": "FINALIZED",
+    "consensusRaw": "MAJORITY_AGREE",
+    "consensusRounds": [
+      {
+        "round": "Accepted",
+        "statusChanges": [
+          "PENDING",
+          "PROPOSING",
+          "COMMITTING",
+          "REVEALING",
+          "ACCEPTED"
+        ],
+        "leaders": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Rollback",
+              "value": "ACTIVE_MEMBER_ONLY"
+            },
+            "equivalenceOutputs": {}
+          }
+        ],
+        "validators": [
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "validatorAddress": "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "return": {
+              "code": "ContractError",
+              "value": "idle"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Rollback",
+              "value": "ACTIVE_MEMBER_ONLY"
+            },
+            "equivalenceOutputs": {}
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "validatorAddress": "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+            "executionResult": "ERROR",
+            "genvm": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "return": {
+              "code": "Rollback",
+              "value": "ACTIVE_MEMBER_ONLY"
+            },
+            "equivalenceOutputs": {}
+          }
+        ]
+      }
+    ],
+    "rotationCount": 0,
+    "initialValidators": 5,
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "agree",
+      "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84": "idle",
+      "0xE6BD8050758CB15fC88387223E31Ae2708B119dC": "agree",
+      "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67": "idle"
+    },
+    "finalLeader": {
+      "mode": "leader",
+      "vote": null,
+      "validatorAddress": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+      "executionResult": "ERROR",
+      "genvm": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "return": {
+        "code": "Rollback",
+        "value": "ACTIVE_MEMBER_ONLY"
+      },
+      "equivalenceOutputs": {}
+    },
+    "input": {
+      "args": [
+        "1",
+        "should fail after revocation"
+      ],
+      "method": "post_room_note"
+    },
+    "executionMode": "NORMAL"
+  }
+]

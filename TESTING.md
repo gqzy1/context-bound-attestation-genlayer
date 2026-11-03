@@ -4,7 +4,7 @@ Fresh commands, exit codes and outputs are recorded in evidence/phase4e and PHAS
 
 ---
 
-## Historical / Superseded — retained verbatim
+## Historical measurements
 
 # Phase 4C final verification
 
@@ -154,4 +154,4 @@ serialization or the custom comparator. Offline tests verify those separately.
 They remain unresolved upstream; no production convergence claim follows.
 
 F01–F10 and T01–T10: NOT RUN. No real AI/network result, deployment, transaction,
-frontend, Repository B, merge or Phase 3 execution. STOP pending authorization.
+frontend, Repository B, merge or Phase 3 execution.

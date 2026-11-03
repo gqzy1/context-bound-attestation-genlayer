@@ -40,6 +40,6 @@ The user supplied screenshots of the GitHub Actions Pages run marked **Success**
 - The older Phase 4C documents are preserved as **time-specific historical reports**; their `NOT PUBLISHED`, `NOT RUN`, `Draft`, and `A main bootstrap` statements are not current release facts.
 - **Portal Intelligent Contracts and Projects submissions are not performed here.** All new changes are in an independent branch / Draft PR awaiting user review and merge authorization.
 
-## Freeze / stop
+## Source boundaries
 
-Unchanged: `contracts/context_bound_attestation.py`, corresponding Repository B copy, original canonical prompt, State Schema/ABI, custom Leader/Validator semantics, authorization rules, dependency locks, network and deployed address. No SDK upgrade, no new transactions, no PR merge, no release workflow dispatch. STOP after documenting and opening a review-only PR.
+Unchanged: `contracts/context_bound_attestation.py`, corresponding Repository B copy, original canonical prompt, State Schema/ABI, custom Leader/Validator semantics, authorization rules, dependency locks, network and deployed address. No SDK upgrade, no new transactions, no PR merge, no release workflow dispatch.

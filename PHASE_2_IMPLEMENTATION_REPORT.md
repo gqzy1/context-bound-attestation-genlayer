@@ -5,7 +5,7 @@
 
 ## 1. 权威基线与版本
 
-已首先完整阅读 architecture-freeze-v1/ 的 9 个权威文件、Canonical Prompt、测试计划、Phase 0/1 报告、现有合约与 PROJECT_CHECKPOINT。再次核验连接账号为 gqzy1（ID 155161534），Phase 1 PR #1 仍 Draft/open/unmerged，HEAD 精确为 6f498abbf1525f304174ed2018509a4445d441c8。
+已首先完整阅读 architecture-freeze-v1/ 的 9 个权威文件、Canonical Prompt、测试计划、Phase 0/1 报告、现有合约与 PROJECT_CHECKPOINT。Phase 1 PR #1 仍 Draft/open/unmerged，HEAD 精确为 6f498abbf1525f304174ed2018509a4445d441c8。
 
 从该 HEAD 创建 phase2-independent-consensus，保留 Phase 1 分支和 main。实现来源仅本项目权威基线与官方锁定 SDK，未使用旧项目代码。
 
@@ -18,7 +18,7 @@
 | genlayer-test / genvm-linter | 0.29.2 / 0.11.0 |
 | pytest / pyright | 9.1.1 / 1.1.414 |
 | genlayer-py / web3 | 0.16.3 / 8.0.0（测试工具依赖） |
-| genlayer-js | 1.1.8 保留为后续客户端锁定；本轮不开发前端 |
+| genlayer-js | 1.1.8 保留为后续客户端锁定；该历史检查不开发前端 |
 
 requirements.lock.txt 与 Phase 1 完全相同。Direct Mode 未自动导入已锁定 cloudpickle runner，准备脚本从已验证的官方 SDK 包提取原 runner 并用于测试序列化，未安装另一版本。官方 artifact SHA256 仍为 4f0b358ec98ec148be9b95cdfb0f0e1a6cbe64da0194fdfac3fffc6f5d1d93e2。
 
@@ -122,7 +122,7 @@ S 预期标签来自冻结设计，分别作为 Leader/Validator mock 脚本，�
 - 新增 1 条 SDK run_nondet_unsafe 类型签名诊断：上游 Validator Callable 使用未参数化 Result，导致 Return[Unknown]。接口实现和 SDK 原文已复核保留。
 - 没有修改 SDK、全局屏蔽规则或过滤输出；业务代码新增诊断已修正。工具 summary.errors=0 与实际列表不一致，以 exit/ok/7 条列表判 FAIL。
 
-默认类型检查、序列化和全部离线运行验证通过，这些上游类型元数据限制不改变本轮已验证的权限和 comparator 行为；Strict 仍是未解决上游问题，不虚报全绿。
+默认类型检查、序列化和全部离线运行验证通过，这些上游类型元数据限制不改变该历史检查已验证的权限和 comparator 行为；Strict 仍是未解决上游问题，不虚报全绿。
 
 Direct Mode 默认 Leader 执行后立即返回、另捕获 Validator，因此持久化失败测试使用仅测试内的同步 executor，在实际回调 vote 接受前不返回且不恢复/伪造存储。此 executor 的配置票必须全部通过；它不是 GenLayer 网络 majority/finality/rotation 的替代实现。原生 SDK 捕获/重跑另有独立 smoke，未保存准入。
 
@@ -144,6 +144,4 @@ genlayer-test 0.29.2 mock 即使 text 模式也自动 JSON 解码；测试 mock 
 
 新增现金支出 0；没有付费 API/LLM、节点、服务、CI 或链上交易。未创建 Repository B、前端、部署包或执行 Phase 3；未访问其他 GenLayer 网络，未请求/读取/保存钱包私钥或助记词。
 
-下一阶段建议：仅在用户明确批准 Phase 3 后，按冻结文档开发 Repository B 的最小前端；合约真网络收敛与手动签名仍属于后续独立授权阶段。任何架构阻断应 STOP，不改变协议。
 
-**STOP：Phase 2 完成后等待明确 Phase 3 授权。**

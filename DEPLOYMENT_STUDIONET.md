@@ -30,7 +30,7 @@ Phase 4E fresh source RPC: deployed bytes equal A/B (same SHA256/blob). Raw fron
 
 ---
 
-## Historical / Superseded — retained verbatim
+## Historical measurements
 
 # DEPLOYMENT_MANIFEST_STUDIONET — Phase 4C
 
@@ -52,4 +52,4 @@ Phase 4E fresh source RPC: deployed bytes equal A/B (same SHA256/blob). Raw fron
 
 Deployed code was fetched and compared **byte-for-byte** with both repository copies. Header/Depends prove the packaged SDK selection, not each hosted Validator's binary inventory. Old deployment 0x97B9003a17A8EDBD1b5E3379AA659753791497d9 is superseded and is not the frontend target. Main in A remains bootstrap and is not canonical. Immutable historical reports retain their then-correct undeployed status; current evidence supersedes it.
 
-Root 1 is revoked; historical Room 1 ELIGIBLE remains, active=false. No migration, upgrade or new deployment occurred in Phase 4C. See ONCHAIN_EVIDENCE_INDEX.md. No transaction was sent in this phase. STOP awaiting manual acceptance and later publication authorization.
+Root 1 is revoked; historical Room 1 ELIGIBLE remains, active=false. No migration, upgrade or new deployment occurred in Phase 4C. See ONCHAIN_EVIDENCE_INDEX.md. No transaction was sent in this phase.

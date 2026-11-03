@@ -4,7 +4,7 @@
 
 ## 1. 权威基线及完整性
 
-重新阅读 A/B 全部冻结九文件、Canonical Prompt、D/N/S/F/T 测试计划、Phase0–3和4A/4B报告、合约、TESTING、checkpoint、provenance/manifest，以及原定 FRONTEND_ACTIVATION_PLAN。历史 Phase4A 计划的旧 SHA 被用户授权的 Phase4B 修补 SHA 取代；激活流程与安全要求继续沿用，未重设计。
+重新阅读 A/B 全部冻结九文件、Canonical Prompt、D/N/S/F/T 测试计划、Phase0–3和4A/4B报告、合约、TESTING、checkpoint、provenance/manifest，以及原定 FRONTEND_ACTIVATION_PLAN。历史 Phase4A 计划的旧 SHA 被 Phase4B 修补 SHA 取代；激活流程与安全要求继续沿用，未重设计。
 
 GitHub 连接实际 login=gqzy1 / ID155161534，再次核验。仅使用该连接。A 基线 phase4b-address-compatibility HEAD c7c6e50620602d03ad4e3c116ad1532097feab8a；B 同名基线 HEAD 3eeb4ff52359ffe39e146cce4ac402def612d503。独立分支 A phase4c-evidence-closure，B phase4c-frontend-activation。A main 仍 bootstrap，不作为 canonical；原五个 Draft PR/head、main 不变。
 
@@ -16,11 +16,11 @@ Canonical contract `0xDe9abfBe2E4A61d23e27b552e241f5Bb1d1821b8` / Stable Studion
 
 用户完成的真实 Studio T01–T10 与本阶段的只读复核分开记录。**23/23 实际只读 SDK 操作成功**：chain1/source1/schema1/tx10/state10。十笔均 FINALIZED / MAJORITY_AGREE，历史最终轮 Accepted。T01–T07/T09 Leader SUCCESS/Return；T08/T10 Leader ERROR/Rollback ACTIVE_MEMBER_ONLY 是预期合约安全拒绝，不是成功写入。
 
-ROOT_ID=1、Room1=1、Room2=2、Note=1 来自真实收据/状态。当前 root1 revoked=true；Room1历史ELIGIBLE仍在，但 Wallet B active=false；Room2 NOT_ELIGIBLE / active=false；早前note1保留、Room2无note；counts2/1/2/1。T04之前 active=true 属于用户人工历史验收，本轮仅重读撤销后的最终态，未虚构历史瞬间读取。
+ROOT_ID=1、Room1=1、Room2=2、Note=1 来自真实收据/状态。当前 root1 revoked=true；Room1历史ELIGIBLE仍在，但 Wallet B active=false；Room2 NOT_ELIGIBLE / active=false；早前note1保留、Room2无note；counts2/1/2/1。T04之前 active=true 属于用户人工历史验收，该历史检查仅重读撤销后的最终态，未虚构历史瞬间读取。
 
 T07包含两轮：首轮 Leader ContractError/exit_code1、JSONDecodeError，Validator结果3 disagree/1 idle；rotation_count1 后最终 Accepted/NOT_ELIGIBLE，最终votes3 agree/2 idle。T04最终也为3 agree/2 idle。T01/T09各5 agree。完整地址、每轮回执、错误/等价输出在 t01-t10.json 与无损原始压缩归档。**未宣称每轮全票赞同或模型格式稳定。** 不改 Prompt、不换网络、不重发交易。
 
-Explorer网页抓取 T04/T07 受限，未重新验证网页UI；原20张用户截图保留名称/hash/原始字节，并单列关键T07/T08/T09/T10图。T01–T05原截图未在该20张集合中，本轮从真实RPC核验其收据，未补造截图。公开十笔链接和当前链上状态详见 ONCHAIN_EVIDENCE_INDEX.md。
+Explorer网页抓取 T04/T07 受限，未重新验证网页UI；原20张用户截图保留名称/hash/原始字节，并单列关键T07/T08/T09/T10图。T01–T05原截图未在该20张集合中，该历史检查从真实RPC核验其收据，未补造截图。公开十笔链接和当前链上状态详见 ONCHAIN_EVIDENCE_INDEX.md。
 
 真实23项读取的执行命令（B cwd，exit0）：`node scripts/verify-onchain-readonly.mjs > evidence/phase4c/read-only-run.log 2>&1`。脚本无账户/签名，仅允许指定只读RPC，429即停止。`node scripts/index-phase4c-evidence.mjs` 离线解析归档，绝非又执行了T交易。gzip归档保留解压后SHA与长度。
 
@@ -91,6 +91,5 @@ Rollback显示业务拒绝，未验明共识为undetermined并阻止重复写，
 
 Release gate仍未完成：正常桌面/手机视觉/console、实际浏览器钱包扩展/拒签/账户链事件、真实前端人工提交及reload恢复未测试；已发表Pages路径未测试且本阶段禁止发布。Python Strict七条上游诊断和SDK较大bundle未解决。真实T07格式失败/反对票暴露模型输出稳定性风险，不隐瞒、不更改协议；两个语义交易不能证明所有自然语言/注入场景或未来服务稳定性。RPC免费额度/faucet/ hosted模型可用性没有无限保障。snapshot只是记录，不授予当前权限。
 
-未发现必须改变冻结协议/接口的硬阻断。新增现金支出0，无付费API/服务器/数据库、部署、升级、真实签名/交易、私钥/助记词处理、main写入、merge、Pages或Portal。真实前端发交易与发布均需用户未来明确授权，不能从本阶段推导。
+未发现必须改变冻结协议/接口的硬阻断。新增现金支出0，无付费API/服务器/数据库、部署、升级、真实签名/交易、私钥/助记词处理、main写入、merge、Pages或Portal。该历史检查未验证前端真实发交易或发布。
 
-**STOP — Phase4C工作完成后等待人工验收及后续发布授权。**

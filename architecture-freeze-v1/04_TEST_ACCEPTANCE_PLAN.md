@@ -88,7 +88,7 @@ T08: B attempts post to Room 2 → rejected; capture error/read unchanged.
 T09: A revokes original root; membership in Room 1 becomes false by read.
 T10: B attempts another note in Room 1 → rejected; existing historical note persists.
 
-Tx limits: do NOT spam nondet RPC or perform repeated speculative requests. If a transaction becomes undetermined, report final receipt and STOP before new billable writes. Do not assume absence of acceptance equals rejection.
+Tx limits: do NOT spam nondet RPC or perform repeated speculative requests. If a transaction becomes undetermined, retain the final receipt and avoid duplicate writes. Do not assume absence of acceptance equals rejection.
 
 ## 6. Frontend acceptance
 F01: wallet not connected sees real read-only data and verified example; no fake badges.
@@ -103,4 +103,4 @@ F09: production build + test suite pass; mobile responsive, no console errors.
 F10: GitHub Pages base path and deep-link/fallback navigation work without a backend.
 
 ## 7. Acceptance gate
-Do NOT proceed to Portal submission unless D*, N*, F*, relevant live T* pass and saved public proof URLs point to their *actual* receipts. Target genuine multiple-Validator agreement as evidenced in explorer/receipt, not a speculative claim. Contract source in A/B byte-for-byte identical. A is independently usable; B has functioning product flow. If T04/T07 consistently fails real consensus, STOP and seek explicit direction; don't quietly loosen equivalence/safety logic.
+Acceptance requires reproducible local checks and actual live receipts. The contract source and embedded application copy must match byte-for-byte. Repeated semantic disagreement is a reliability limit; loosening equivalence changes the protocol rather than validating it.

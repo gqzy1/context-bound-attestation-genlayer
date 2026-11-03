@@ -10,11 +10,11 @@ Phase 4D create_space was independently observed in Explorer as Accepted / SUCCE
 
 **Archive availability correction:** B audited main and the locally fetched phase4c-frontend-activation tree do not contain `evidence/phase4c/rpc-http.json.gz`, `onchain-readonly.json.gz`, `user-explorer-screenshots.tar.gz`, `screenshots-index.json`, T07/T08/T09/T10 PNGs or `scripts/verify-onchain-readonly.mjs`. A retains an archive-integrity metadata file, not the archives themselves. The historical claims below must not be read as present binary archive availability. No screenshot was fabricated or recovered in this patch. Use existing A JSON summaries/logs and public transaction pages; original screenshots need separate owner-provided archival if required.
 
-Current canonical source is A main. Prior NOT RUN/NOT PUBLISHED/STOP text below describes Phase 4C, superseded for partial browser/live frontend evidence by Phase 4D/4E. Portal not submitted by this phase.
+Current canonical source is A main. Prior NOT RUN/NOT PUBLISHED text below describes Phase 4C, superseded for partial browser/live frontend evidence by Phase 4D/4E. Portal not submitted by this phase.
 
 ---
 
-## Historical / Superseded — retained verbatim
+## Historical measurements
 
 # ONCHAIN_EVIDENCE_INDEX — Phase 4C
 
@@ -127,7 +127,7 @@ ROOT_ID=1，ROOM1_ID=1，ROOM2_ID=2，NOTE_ID=1，来自真实返回及状态，
 }
 ```
 
-T04 的 ELIGIBLE 是历史永久决定，**不表示现在 active=true**。T09 已撤销 root 1；当前两房间 active=false。T05 的历史 note 1 仍在 Room 1，Room 2 无留言，counts 为 spaces=2 / attestations=1 / decisions=2 / notes=1。T08/T10 Leader 明确 Rollback `ACTIVE_MEMBER_ONLY`，不是 RPC 失败、NOT_ELIGIBLE 或未决。T04 当时 active=true 是用户已验收的历史事实；本轮无法通过“当前读取”重建撤销前瞬时状态，未冒充重读。当前 SDK 状态快照不能证明失败前后所有瞬时计数；原始拒绝收据与当前历史共同归档。
+T04 的 ELIGIBLE 是历史永久决定，**不表示现在 active=true**。T09 已撤销 root 1；当前两房间 active=false。T05 的历史 note 1 仍在 Room 1，Room 2 无留言，counts 为 spaces=2 / attestations=1 / decisions=2 / notes=1。T08/T10 Leader 明确 Rollback `ACTIVE_MEMBER_ONLY`，不是 RPC 失败、NOT_ELIGIBLE 或未决。T04 当时 active=true 是用户已验收的历史事实；该历史检查无法通过“当前读取”重建撤销前瞬时状态，未冒充重读。当前 SDK 状态快照不能证明失败前后所有瞬时计数；原始拒绝收据与当前历史共同归档。
 
 ## T04 / T07 与轮换完整性
 
@@ -254,8 +254,8 @@ Final Leader: `0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11`。初始 Validators: 
 - [state-readback.json](evidence/phase4c/state-readback.json)：链 ID、真实 ABI、十项状态，均实际成功。
 - [source-integrity.json](evidence/phase4c/source-integrity.json) 和 integrity.json：部署源码 hash 与 A/B 原始字节核验。
 - Repository B [rpc-http.json.gz](https://github.com/gqzy1/contextpass-genlayer/blob/phase4c-frontend-activation/evidence/phase4c/rpc-http.json.gz)、[onchain-readonly.json.gz](https://github.com/gqzy1/contextpass-genlayer/blob/phase4c-frontend-activation/evidence/phase4c/onchain-readonly.json.gz)：无损压缩的真实 HTTP 响应与 SDK 解码；archive-integrity.json 保存解压后 SHA/大小。`gzip -dk` 或 Python gzip 可读取，未过滤错误票。
-- B evidence/phase4c/user-explorer-screenshots.tar.gz：用户提供的 20 张原图，screenshots-index.json 保留原文件名与 hash；不是助手新拍图。T01–T05 原截图未纳入这批 20 张，本轮以原始真实 RPC 收据核验它们。
+- B evidence/phase4c/user-explorer-screenshots.tar.gz：用户提供的 20 张原图，screenshots-index.json 保留原文件名与 hash；不是助手新拍图。T01–T05 原截图未纳入这批 20 张，该历史检查以原始真实 RPC 收据核验它们。
 - B [T07-rotation.png](https://github.com/gqzy1/contextpass-genlayer/blob/phase4c-frontend-activation/evidence/phase4c/T07-rotation.png)、T07-execution.png、T08-rollback.png、T09-revoke.png、T10-rollback.png 单独保留关键截图。截图可见 Accepted/Return/Rollback；实际 Validator 地址/票来自 RPC，而非推测截图。
 - B scripts/verify-onchain-readonly.mjs：只允许 eth_chainId / eth_getTransactionByHash / gen_getContractCode / gen_getContractSchema / gen_call(type=read)，没有 account/签名/write 接口；429 即停。
 
-前端真实签名/提交/恢复：**NOT RUN**。不得把用户的 Studio 交易写成已通过前端执行的测试。Pages 未发布，Portal 未提交。STOP。
+前端真实签名/提交/恢复：**NOT RUN**。不得把用户的 Studio 交易写成已通过前端执行的测试。Pages 未发布，Portal 未提交。

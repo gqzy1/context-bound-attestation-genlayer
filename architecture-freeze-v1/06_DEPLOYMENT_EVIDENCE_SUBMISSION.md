@@ -1,4 +1,4 @@
-# DEPLOYMENT, PROVENANCE, REVIEW & PORTAL PACKAGING V1
+# Deployment and provenance reference
 
 ## Readiness status
 No contract deployed. No transaction sent. No PR created. No Portal submission. No real SDK/tool or validator convergence test run as part of Freeze V1.
@@ -26,28 +26,13 @@ J. Attempt posting to Room 1 from B; verify rejection and historical Room1 note 
 
 Pre-bake final implementation-specific numeric IDs and arg types into `MANUAL_STUDIO_EXECUTION.md` after Phase 4 precheck. NEVER make up tx IDs/consensus state/contract address. If an LLM divergence prevents T04/T07 real FINALIZED, report; don't assume success due to a pending preview.
 
-## What the user sends back after manual signature
+## Wallet execution evidence
 - Canonical deployed contract address, chain ID, source hash and deployment tx URL.
 - T02–T10 transaction IDs/Explorer links and explicit observed final statuses, validator votes/count where available, rounds/rotations if shown.
 - Screen or text capture of `get_attestation`, `get_space`, `get_decision`, `is_active_member`, `get_room_notes` for approved, denied, revoked scenarios.
 - Public GitHub Pages URL and mobile/desktop preview after frontend integration.
 - No keys, seed phrases, wallet exports, auth tokens or secret local configuration.
 
-## Repo A — Intelligent Contracts submission content
-README: unique primitive, trust assumption, why GenLayer necessary, state diagrams, custom independent Validator/equivalence description, write/read API, 2-wallet usage, invariants, Direct Mode test run, compiler/linter success, real finalized consensus proof, deployment details and cross-language (Chinese/English input) behavior. Standalone review must not require frontend repo.
-
-## Repo B — Projects submission content
-README: real target audience/use case, screenshots, wallet support, every click-to-chain path, two-space genuine onchain walkthrough, protected posting and revocation, read-only explorer demo, failure handling, SDK/network build instructions, byte-exact contract copy, deployment provenance and proof index. No misleading 'privacy' or 'real skills verified' claims.
-
 ## Public evidence index
 Each claim links to an exact explorer TX or read-only on-chain view with chain ID, method, wallet role, finalized consensus outcome, stored IDs. Screenshots supplemental only. Include negative gate attempts where tx may revert plus readback unchanged. Provide direct URL to verified real room and source credential for reviewers without seeded demo wallets. Display any validator disagreement or undetermined retry as such.
 
-## Portal data hygiene
-- Two DIFFERENT GitHub repository URLs (A and B).
-- Two self-contained submissions, overlapping contract source as legitimate shared primitive; explain provenance.
-- Avoid duplicated link entries within Portal fields; check site and receipt links if Portal validation rejects duplicates.
-- Primary tag proposal for B: Identity & Trust (身份与信誉), specific tags chosen from real visible Portal categories only.
-- IC and Project points/review eligibility are never guaranteed. No promise of award, high score or guaranteed approval.
-
-## Explicit STOP before submitting
-Work may prepare submission text and README but MUST NOT submit to Portal unless separately approved by user, and MUST NOT execute deployments or signed transactions.

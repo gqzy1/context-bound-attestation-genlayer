@@ -2,7 +2,7 @@
 
 **2026-10-10 — 地址规范化修复与离线验收 PASS；Python Strict 仍 FAIL（7 条原有上游 SDK 诊断）。补丁尚未部署，T02–T10 保持暂停。**
 
-本轮使用 gqzy1（再次认证 login=gqzy1 / ID155161534）。没有部署、升级、发送真实交易、解锁前端、发布 Pages、合并 PR、提交 Portal 或处理私钥/助记词。完成后 STOP。
+没有部署、升级、发送真实交易、解锁前端、发布 Pages、合并 PR、提交 Portal 或处理私钥/助记词。
 
 ## 1. 基线与用户提供的真实证据
 
@@ -10,7 +10,7 @@ A 从 `daf0bf9a70357fb626b0a8e732826c8db6e0c1fc` 的 phase2-independent-consensu
 
 用户提供：旧合约 `0x97B9003a17A8EDBD1b5E3379AA659753791497d9` 部署 FINALIZED / Accepted / SUCCESS；两次 issue_attestation 均 FINALIZED / Rollback / INVALID_ADDRESS，第二次输入正确 B 且 Explorer 显示整数。get_decision(1,B) 出现泛化读取错误，get_counts 全零。
 
-本轮未独立取得失败交易 ID、完整 raw calldata 或 Explorer 显示的精确十进制值。这些链上状态是用户报告，不伪装为本轮实测。特别是 **get_decision 的泛化错误不能单独证明根因**；没有真实 Studio 页面或网络 Validator 测试成功的声明。
+该历史检查未独立取得失败交易 ID、完整 raw calldata 或 Explorer 显示的精确十进制值。这些链上状态是用户报告，不伪装为该历史检查实测。特别是 **get_decision 的泛化错误不能单独证明根因**；没有真实 Studio 页面或网络 Validator 测试成功的声明。
 
 ## 2. 已确认的源码根因与真实 SDK 复现
 
@@ -112,13 +112,12 @@ B 实现/打包 commit：`61aac58e0b465a71a0fe3cf4162b1b10f43d1128`；[Draft PR 
 
 原 A PR1：head 6f498abbf1525f304174ed2018509a4445d441c8；PR2：head daf0bf9a70357fb626b0a8e732826c8db6e0c1fc；B PR1：head 3c9760cf6e1eb444123b9a85296a174fd98b4123；均仍 Draft/open/unmerged。main 仍 A770aa5d4cf6d4ef2b6ef28fb8c81c78230a6fa0b、B5095cdc5503dda4642c917cfa4576d1286c36319。未使用 halihalibt 连接或修改其任何仓库。
 
-## 7. 尚未解决的风险与下一步建议（本轮不执行）
+## 7. 尚未解决的风险与下一步建议（该历史检查不执行）
 
 1. 补充第二次失败交易 ID/原始 calldata/精确十进制整数；必须与 `int(Wallet B,16)` 对照。若表示为 SDK little-endian as_int，不得悄悄翻转推断身份；先明确调用侧转换来源。当前八组 SDK 测试证明规范映射，**不等于取得了实际失败交易字节**。
 2. 普通 get_decision 错误仍需 RPC 错误明细验证；该入口的整数回归通过不证明网络/Studio错误全部消失。
-3. 现有部署继续运行旧代码。优先在另行授权、人工签名后以精确新源码**重新部署**到 Stable Studionet61999，构造参数空；保存真实部署 tx/finality/source/hash。项目没有应用级 upgrade 或状态迁移入口，未验证平台升级能力，不承诺原地址可原地升级。本轮不执行任何部署或升级。
+3. 现有部署继续运行旧代码。优先在人工签名后以精确新源码**重新部署**到 Stable Studionet61999，构造参数空；保存真实部署 tx/finality/source/hash。项目没有应用级 upgrade 或状态迁移入口，未验证平台升级能力，不承诺原地址可原地升级。该历史检查不执行任何部署或升级。
 4. 新地址和源码验证后才能重新开始 T02–T10。使用真实返回 root/space IDs；A issuer/owner，B holder；先核对存储 issuer/holder/trusted_issuer，再申请准入。真实共识可能拒绝/分歧/未决，必须安全停止，不放宽 Prompt 或 Equivalence Principle。
 5. 旧 counts 全零仅为用户报告，应在人工操作前读回确认；不得假造状态迁移成功。新候选没有链上证据。前端写入锁和空 candidate address 保留，不能提前声称 Verified Demo。
 6. Python Strict 七条上游诊断、真实 SDK/GenVM全网络运行和多 Validator收敛风险保留。不增加付费依赖或切换网络。
 
-**STOP：本轮只完成地址兼容性修复、离线验证和 Draft PR；等待用户进一步明确授权及真实链上证据。**

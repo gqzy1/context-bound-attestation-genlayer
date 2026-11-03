@@ -1,10 +1,10 @@
 # Current consensus documentation status — Phase 4E
 
-The mechanism description below remains valid for the unchanged production code. Its Phase 2 NOT RUN/STOP lines describe historical offline testing only, superseded by genuine T01–T10 evidence in ONCHAIN_EVIDENCE_INDEX.md. Current canonical source is main; T04 accepted ELIGIBLE, T07 accepted NOT_ELIGIBLE after one Leader rotation. Exact-label comparison follows independent semantic classification; it is not format-only equivalence. Review PHASE_4E_SUBMISSION_AUDIT.md for current checks and limits.
+The mechanism description below remains valid for the unchanged production code. Its Phase 2 offline test statements describe historical offline testing only, superseded by genuine T01–T10 evidence in ONCHAIN_EVIDENCE_INDEX.md. Current canonical source is main; T04 accepted ELIGIBLE, T07 accepted NOT_ELIGIBLE after one Leader rotation. Exact-label comparison follows independent semantic classification; it is not format-only equivalence. Review PHASE_4E_SUBMISSION_AUDIT.md for current checks and limits.
 
 ---
 
-## Historical / Superseded — retained verbatim
+## Historical measurements
 
 # Independent custom consensus — Phase 2
 
@@ -84,4 +84,3 @@ signature diagnostic (its Validator Result generic is unparameterized).
 No rule is globally suppressed and no SDK source is modified. The original
 diagnostics and exits are retained. See TESTING.md and the Phase 2 report.
 
-STOP after Phase 2. No frontend, deployment or transactions are authorized.

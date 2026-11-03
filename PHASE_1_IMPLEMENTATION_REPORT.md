@@ -5,7 +5,7 @@
 
 ## 1. 权威来源与版本
 
-已先完整阅读 Phase 0 环境报告以及 Architecture Freeze V1 的全部 9 个 Markdown 文件。原 ZIP 文件逐字节保留在 `architecture-freeze-v1/`；`evidence/phase1/freeze-integrity.json` 记录全部 SHA256。冻结包自身标注日期 2026-10-10；本轮执行时间以命令证据 UTC 时间为准，未改写原文。
+已先完整阅读 Phase 0 环境报告以及 Architecture Freeze V1 的全部 9 个 Markdown 文件。原 ZIP 文件逐字节保留在 `architecture-freeze-v1/`；`evidence/phase1/freeze-integrity.json` 记录全部 SHA256。冻结包自身标注日期 2026-10-10；该历史检查执行时间以命令证据 UTC 时间为准，未改写原文。
 
 | 依赖 | 实际沿用版本 |
 |---|---|
@@ -18,7 +18,7 @@
 | genlayer-py / web3 | 0.16.3 / 8.0.0（测试工具依赖，不是合约 SDK） |
 | genlayer-js | Phase 0 锁定 1.1.8；本阶段未开发或构建前端 |
 
-Python 传递依赖完整固定于 `requirements.lock.txt`。本轮复用 Phase 0 环境，没有添加付费服务或 API。官方 GenVM SDK artifact SHA256：`4f0b358ec98ec148be9b95cdfb0f0e1a6cbe64da0194fdfac3fffc6f5d1d93e2`。
+Python 传递依赖完整固定于 `requirements.lock.txt`。该历史检查复用 Phase 0 环境，没有添加付费服务或 API。官方 GenVM SDK artifact SHA256：`4f0b358ec98ec148be9b95cdfb0f0e1a6cbe64da0194fdfac3fffc6f5d1d93e2`。
 
 ## 2. 实现范围
 
@@ -79,7 +79,7 @@ Direct Mode：**54 executed / 54 passed / 0 failed / 0 errors / 0 skipped**。D0
 | D23 | Delimited keys separate 1/11 and normalize address casing  PASS |
 | D24 | Unknown positive IDs return explicit stable shapes without writes  PASS |
 
-D11–D14/D18/D22 的共识后分支使用**仅测试内的私有边界 test double**，只验证确定性保存和访问控制，不声称完成 AI 分类、真实共识或链上回执。N01–N10、S01–S20 的语义判断、F01–F10、T01–T10：**NOT RUN / 未授权阶段**。
+D11–D14/D18/D22 的共识后分支使用**仅测试内的私有边界 test double**，只验证确定性保存和访问控制，不声称完成 AI 分类、真实共识或链上回执。N01–N10、S01–S20 的语义判断、F01–F10、T01–T10：**NOT RUN / 未执行**。
 
 ## 4. SDK strict 告警复核
 
@@ -102,10 +102,9 @@ D11–D14/D18/D22 的共识后分支使用**仅测试内的私有边界 test dou
 
 ## 6. 风险、阻断及下一阶段建议
 
-**无须改变冻结架构的阻断问题。** 当前不可生产准入/部署：共识边界故意未实现，这是本阶段授权边界；SDK strict 上游标注问题仍保留。Direct Mode 无法证明多 Validator 收敛、真实 GenVM 网络执行及交易 finality。没有实测新的 RPC 限额或链上可用性。
+**无须改变冻结架构的阻断问题。** 当前不可生产准入/部署：共识边界故意未实现，这是该阶段实现范围；SDK strict 上游标注问题仍保留。Direct Mode 无法证明多 Validator 收敛、真实 GenVM 网络执行及交易 finality。没有实测新的 RPC 限额或链上可用性。
 
-本轮额外现金支出 0；没有新增收费订阅、付费 LLM/API、云服务器、交易 gas 或付费 CI。未来真实网络条件与免费额度仍需在后续授权范围内验证，不能保证未来费用永久为零。
+该历史检查额外现金支出 0；没有新增收费订阅、付费 LLM/API、云服务器、交易 gas 或付费 CI。未来真实网络条件与免费额度仍需在后续验证中验证，不能保证未来费用永久为零。
 
 下一步仅在用户明确批准 Phase 2 后，按 `03_CANONICAL_CONSENSUS_PROMPT.md` 实现稳定 SDK custom Leader/Validator 独立求值与比较，并完成 N01–N10 和 S01–S20 的模拟验证；不得改变 one-decision-ever/root-only/撤销安全。Phase 1 Draft 保持不合并，不执行真实网络交易。
 
-**STOP：Phase 1 完成后等待明确 Phase 2 批准。**

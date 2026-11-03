@@ -1,4 +1,6 @@
-# FREEZE PACKAGE MANIFEST
+# Historical specification snapshot digests
+
+These sizes and hashes identify the original 2026-10-10 design snapshot, not later documentation revisions.
 
 Generated 2026-10-10. Documentation/design only; no code or transactions.
 

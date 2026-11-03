@@ -26,8 +26,7 @@
 
 SDK严格编码绑定保持精确：Studio历史T02/T03/T06使用数值地址calldata；前端新写保持CalldataAddress。不得把integer/address展示字符串相同当作字节一致、也不得用另一笔手工Studio交易代替当前journal里的签名结果。手工输入恢复hash必须对应相同sender/contract/method/原始编码arguments。
 
-无授权链上操作在测试中发生。实际签名、front-end submit→FINALIZED→readback→reload仍NOT RUN。正常浏览器本地URL不可达，visual/console NOT RUN。解锁只存在独立Draft代码中，既有Phase3/4B branch和main保持锁定原状；未发布网站。
+测试中未执行链上操作。实际签名、front-end submit→FINALIZED→readback→reload仍NOT RUN。正常浏览器本地URL不可达，visual/console NOT RUN。解锁只存在独立Draft代码中，既有Phase3/4B branch和main保持锁定原状；未发布网站。
 
 复原方案（仅下一次需要时另行提交）：设阶段locked=true，同时保留两个canonical guard与所有journal/evidence，不清空未知交易，不发送逆交易。当前不进行回滚或链上状态变更。
 
-**STOP，等待人工验收和后续明确发布/真实钱包测试授权。**

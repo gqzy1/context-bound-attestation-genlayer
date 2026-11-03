@@ -38,7 +38,7 @@ The user supplied screenshots of the GitHub Actions Pages run marked **Success**
 - Mobile visual smoke coverage was limited to screenshots of Overview and My admissions; the signed write was desktop only. Wallet rejection, reload recovery after confirmed transaction, cross-wallet/wrong-chain live tests and the other four methods are not claimed PASS.
 - Space count used to be **2** at the archived post-T10 snapshot. After the user-confirmed new Space #3, that archived snapshot is **historical**; do not present spaces=2 as today's live count without a fresh read.
 - The older Phase 4C documents are preserved as **time-specific historical reports**; their `NOT PUBLISHED`, `NOT RUN`, `Draft`, and `A main bootstrap` statements are not current release facts.
-- **Portal Intelligent Contracts and Projects submissions are not performed here.** All new changes are in an independent branch / Draft PR awaiting user review and merge authorization.
+- **Portal Intelligent Contracts and Projects submissions are not performed here.** This historical report describes changes before their integration.
 
 ## Source boundaries
 
